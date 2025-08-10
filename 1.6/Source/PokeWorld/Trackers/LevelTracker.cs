@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using HarmonyLib;
 
 namespace PokeWorld;
 
@@ -23,6 +26,16 @@ public class LevelTracker : IExposable
     public int totalExpForNextLevel;
     public int wildLevelMax;
     public int wildLevelMin;
+
+    private static readonly Type RaceMorpher;
+    private static readonly MethodInfo SwapAnimalToSapientVersion;
+    private static IEnumerable<Faction> FactionsWithRoyalTitles => Find.FactionManager.AllFactions.Where((Faction f) => f.def.RoyalTitlesAwardableInSeniorityOrderForReading.Count > 0);
+
+    static LevelTracker()
+    {
+        RaceMorpher = AccessTools.TypeByName("BigAndSmall.RaceMorpher");
+        SwapAnimalToSapientVersion = RaceMorpher == null ? null : AccessTools.Method(RaceMorpher, "SwapAnimalToSapientVersion");
+    }
 
     public LevelTracker(CompPokemon comp)
     {
@@ -271,6 +284,18 @@ public class LevelTracker : IExposable
             GenSpawn.Spawn(postEvoPokemon, preEvoPokemon.Position, preEvoPokemon.Map);
             if (faction == Faction.OfPlayer)
                 Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(postEvoPokemon.GetComp<CompPokemon>().PokedexNumber, postEvoPokemon.kindDef);
+            if (SwapAnimalToSapientVersion != null && !preEvoPokemon.IsAnimal && postEvoPokemon.IsAnimal) //BigAndSmall detected, make our evolved form sapient.
+            {
+                Pawn result = SwapAnimalToSapientVersion.Invoke(null, [postEvoPokemon]) as Pawn;
+                if (result != null)
+                {
+                    postEvoPokemon = result;
+                }
+            }
+            if (!preEvoPokemon.IsAnimal && !postEvoPokemon.IsAnimal)
+            {
+                Copy_Sapient_Attributes(preEvoPokemon, postEvoPokemon);
+            }
         }
 
         preEvoPokemon.inventory?.DropAllNearPawn(preEvoPokemon.Position);
@@ -323,7 +348,7 @@ public class LevelTracker : IExposable
         evolution.ageTracker.AgeChronologicalTicks = pokemon.ageTracker.AgeChronologicalTicks;
         evolution.ageTracker.BirthAbsTicks = pokemon.ageTracker.BirthAbsTicks;
         foreach (var td in DefDatabase<TrainableDef>.AllDefs)
-            if (evolution.training.CanBeTrained(td))
+            if (evolution.training.CanBeTrained(td) && pokemon?.training != null)
             {
                 if (pokemon.training.HasLearned(td)) evolution.training.Train(td, null, true);
                 if (pokemon.training.GetWanted(td)) evolution.training.SetWantedRecursive(td, true);
@@ -340,6 +365,167 @@ public class LevelTracker : IExposable
         evolution.playerSettings.Master = pokemon.playerSettings.Master;
         evolution.playerSettings.medCare = pokemon.playerSettings.medCare;
         if (pokemon.Name is { Numerical: false }) evolution.Name = pokemon.Name;
+    }
+
+    //We only need to copy this stuff if both the existing mon and evolution are humanlike
+    private void Copy_Sapient_Attributes(Pawn pokemon, Pawn evolution)
+    {
+        evolution.gender = pokemon.gender;
+
+        //Copy Age
+        evolution.ageTracker.AgeChronologicalTicks = pokemon.ageTracker.AgeChronologicalTicks;
+        if (pokemon.ageTracker.AgeBiologicalYears < 3)
+        {
+            evolution.ageTracker.AgeBiologicalTicks = 3 * GenDate.TicksPerYear;
+        }
+        else
+        {
+            evolution.ageTracker.AgeBiologicalTicks = pokemon.ageTracker.AgeBiologicalTicks;
+        }
+
+        //Copy Ideology
+        if (ModsConfig.IdeologyActive && pokemon.ideo != null && evolution.ideo != null)
+        {
+            evolution.ideo.SetIdeo(pokemon.Ideo);
+            evolution.ideo.OffsetCertainty(pokemon.ideo.Certainty - evolution.ideo.Certainty);
+        }
+
+        //Copy backstory and traits
+        if (evolution.story != null && pokemon.story != null)
+        {
+            evolution.story.favoriteColor = pokemon.story.favoriteColor;
+            evolution.story.Childhood = pokemon.story.Childhood;
+            evolution.story.Adulthood = pokemon.story.Adulthood;
+            evolution.story.traits.allTraits.Clear();
+            foreach (Trait allTrait in pokemon.story.traits.allTraits)
+            {
+                if (!ModsConfig.BiotechActive || allTrait.sourceGene == null)
+                {
+                    evolution.story.traits.GainTrait(new Trait(allTrait.def, allTrait.Degree, allTrait.ScenForced));
+                }
+            }
+        }
+
+        //Copy genes
+        if (ModsConfig.BiotechActive && evolution.genes != null && pokemon.genes != null)
+        {
+            evolution.genes.Xenogenes.Clear();
+            List<Gene> sourceXenogenes = pokemon.genes.Xenogenes;
+            foreach (Gene sourceXeno in sourceXenogenes)
+            {
+                evolution.genes.AddGene(sourceXeno.def, xenogene: true);
+            }
+            int i;
+            for (i = 0; i < sourceXenogenes.Count; i++)
+            {
+                Gene xenogene = evolution.genes.Xenogenes[i];
+                if (sourceXenogenes[i].Overridden)
+                {
+                    xenogene.overriddenByGene = evolution.genes.GenesListForReading.First((Gene e) => e.def == sourceXenogenes[i].overriddenByGene.def);
+                }
+                else
+                {
+                    xenogene.overriddenByGene = null;
+                }
+            }
+            evolution.genes.Endogenes.Clear();
+            List<Gene> sourceEndogenes = pokemon.genes.Endogenes;
+            foreach (Gene sourceEndo in sourceEndogenes)
+            {
+                evolution.genes.AddGene(sourceEndo.def, xenogene: false);
+            }
+            int i2;
+            for (i2 = 0; i2 < sourceEndogenes.Count; i2++)
+            {
+                Gene endogene = evolution.genes.Endogenes[i2];
+                if (sourceEndogenes[i2].Overridden)
+                {
+                    endogene.overriddenByGene = evolution.genes.GenesListForReading.First((Gene e) => e.def == sourceEndogenes[i2].overriddenByGene.def);
+                }
+                else
+                {
+                    endogene.overriddenByGene = null;
+                }
+            }
+        }
+
+        //Copy skills
+        evolution.skills.skills.Clear();
+        foreach (SkillRecord skill in pokemon.skills.skills)
+        {
+            SkillRecord item = new SkillRecord(evolution, skill.def)
+            {
+                levelInt = skill.levelInt,
+                passion = skill.passion,
+                xpSinceLastLevel = skill.xpSinceLastLevel,
+                xpSinceMidnight = skill.xpSinceMidnight
+            };
+            evolution.skills.skills.Add(item);
+        }
+
+        //Copy needs
+        evolution.needs.AllNeeds.Clear();
+        foreach (Need allNeed in pokemon.needs.AllNeeds)
+        {
+            Need need = (Need)Activator.CreateInstance(allNeed.def.needClass, evolution);
+            need.def = allNeed.def;
+            evolution.needs.AllNeeds.Add(need);
+            need.SetInitialLevel();
+            need.CurLevel = allNeed.CurLevel;
+            evolution.needs.BindDirectNeedFields();
+        }
+        if (pokemon.needs.mood != null)
+        {
+            List<Thought_Memory> memories = evolution.needs.mood.thoughts.memories.Memories;
+            memories.Clear();
+            foreach (Thought_Memory memory in pokemon.needs.mood.thoughts.memories.Memories)
+            {
+                Thought_Memory thought_Memory = (Thought_Memory)ThoughtMaker.MakeThought(memory.def);
+                thought_Memory.CopyFrom(memory);
+                thought_Memory.pawn = evolution;
+                memories.Add(thought_Memory);
+            }
+        }
+
+
+        //Copy mutant
+        if (pokemon.mutant != null)
+            MutantUtility.SetPawnAsMutantInstantly(evolution, pokemon.mutant.Def, pokemon.GetRotStage());
+
+        //Copy royalty
+        if (pokemon.royalty != null && evolution.royalty != null)
+        {
+            foreach (RoyalTitle item in pokemon.royalty.AllTitlesForReading)
+            {
+                foreach (Faction royalFaction in FactionsWithRoyalTitles)
+                {
+                    evolution.royalty.SetHeir(pokemon.royalty.GetHeir(royalFaction), royalFaction);
+                    foreach(FactionPermit permit in pokemon.royalty.PermitsFromFaction(royalFaction))
+                    {
+                        evolution.royalty.AddPermit(permit.Permit, royalFaction);
+                    }
+                    RoyalTitle title = pokemon.royalty.GetCurrentTitleInFaction(royalFaction);
+                    if (title != null)
+                        evolution.royalty.SetTitle(royalFaction, title.def, true, true, false);
+                    evolution.royalty.SetFavor(royalFaction, pokemon.royalty.GetFavor(royalFaction));
+                }
+            }
+        }
+
+        //Copy Abilities
+        foreach (Ability ability in pokemon.abilities.abilities)
+        {
+            if (evolution.abilities.GetAbility(ability.def) == null)
+                evolution.abilities.GainAbility(ability.def);
+        }
+        List<Ability> abilities = evolution.abilities.abilities;
+        for (int i = abilities.Count - 1; i >= 0; i--)
+        {
+            Ability ability2 = abilities[i];
+            if (pokemon.abilities.GetAbility(ability2.def) == null)
+                evolution.abilities.RemoveAbility(ability2.def);
+        }
+
     }
 
     public void LevelTick()
