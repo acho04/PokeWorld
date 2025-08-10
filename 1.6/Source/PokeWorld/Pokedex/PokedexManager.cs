@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld.Planet;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography;
-using RimWorld.Planet;
 using Verse;
 
 namespace PokeWorld;
@@ -59,6 +60,31 @@ public sealed class PokedexManager(World world) : WorldComponent(world)
     { 
         Scribe_Collections.Look(ref discoveredForm, "PW_discoverdForms", LookMode.Value, LookMode.Def);
         Scribe_Collections.Look(ref pokedex, "PW_pokedex", LookMode.Def, LookMode.Value);
+        
+        //Fix any potential corruption
+        if (Scribe.mode == LoadSaveMode.PostLoadInit)
+        {
+            if (discoveredForm == null)
+                discoveredForm = new();
+            if (pokedex == null)
+                pokedex = new();
+
+            foreach (var kvp in pokedex)
+            {
+                var pawnKind = kvp.Key;
+                if (!pawnKind.race.HasComp(typeof(CompPokemon)))
+                    continue;
+                var dexNumber = pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber;
+                if (!discoveredForm.ContainsKey(dexNumber))
+                    discoveredForm.Add(dexNumber, kvp.Key);
+            }
+            foreach (var kvp in discoveredForm)
+            {
+                var pawnKind = kvp.Value;
+                if (!pokedex.ContainsKey(pawnKind))
+                    discoveredForm.Remove(kvp.Key);
+            }
+        }
     }
 
     public bool IsPokemonSeen(int dexNumber)
