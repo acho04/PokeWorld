@@ -15726,8 +15726,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/245_Suicune/DessicatedSuicune</texPath>
+          <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

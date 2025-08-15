@@ -27,8 +27,11 @@ public class LevelTracker : IExposable
     public int wildLevelMax;
     public int wildLevelMin;
 
+    // B&S Sapient Animal Compatibility Variables
     private static readonly Type RaceMorpher;
     private static readonly MethodInfo SwapAnimalToSapientVersion;
+    private static readonly Type RaceTracker = AccessTools.TypeByName("BigAndSmall.RaceTracker");
+
     private static IEnumerable<Faction> FactionsWithRoyalTitles => Find.FactionManager.AllFactions.Where((Faction f) => f.def.RoyalTitlesAwardableInSeniorityOrderForReading.Count > 0);
 
     static LevelTracker()
@@ -279,8 +282,8 @@ public class LevelTracker : IExposable
         foreach (var evolutionKindDef in kindDefs)
         {
             var postEvoPokemon = PawnGenerator.GeneratePawn(evolutionKindDef, faction);
-            Copy(preEvoPokemon, postEvoPokemon);
             postEvoPokemon.health.Reset();
+            Copy(preEvoPokemon, postEvoPokemon);
             GenSpawn.Spawn(postEvoPokemon, preEvoPokemon.Position, preEvoPokemon.Map);
             if (faction == Faction.OfPlayer)
                 Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(postEvoPokemon.GetComp<CompPokemon>().PokedexNumber, postEvoPokemon.kindDef);
@@ -353,6 +356,45 @@ public class LevelTracker : IExposable
                 if (pokemon.training.HasLearned(td)) evolution.training.Train(td, null, true);
                 if (pokemon.training.GetWanted(td)) evolution.training.SetWantedRecursive(td, true);
             }
+
+        //Copy Hediffs
+        List<Hediff> poke_hediffs = pokemon.health.hediffSet.hediffs;
+        if (RaceTracker != null)
+        {
+            //Keep our new RaceTracker
+            var evo_hediffs = evolution.health.hediffSet.hediffs;
+            for (int i = evo_hediffs.Count - 1; i >= 0; i--)
+            {
+                Hediff hediff = evo_hediffs[i];
+                if (!RaceTracker.IsInstanceOfType(hediff))
+                {
+                    evolution.health.RemoveHediff(hediff);
+                }
+            }
+            //Remove the hediff on our old pawn to reuse copy code
+            for (int i = poke_hediffs.Count - 1; i >= 0; i--)
+            {
+                Hediff hediff = poke_hediffs[i];
+                if (RaceTracker.IsInstanceOfType(hediff))
+                {
+                    pokemon.health.RemoveHediff(hediff);
+                }
+            }
+        }
+        else
+        {
+            evolution.health.hediffSet.hediffs.Clear();
+        }
+        foreach (Hediff item in poke_hediffs)
+        {
+            if (item.def is { countsAsAddedPartOrImplant: true }) continue;
+            if (item.Part == null || evolution.health.hediffSet.HasBodyPart(item.Part))
+            {
+                Hediff hediff = HediffMaker.MakeHediff(item.def, evolution, item.Part);
+                hediff.CopyFrom(item);
+                evolution.health.hediffSet.AddDirect(hediff);
+            }
+        }
 
         evolution.playerSettings.animalsReleased = pokemon.playerSettings.animalsReleased;
         evolution.playerSettings.AreaRestrictionInPawnCurrentMap =
@@ -511,6 +553,16 @@ public class LevelTracker : IExposable
                 }
             }
         }
+
+        //Copy Relations
+        //While we did this in Copy(), it could have been lost if we have Big & Small: Sapient Animals installed.
+        evolution.relations.ClearAllRelations();
+        foreach (var relation in pokemon.relations.DirectRelations.ToList())
+            evolution.relations.AddDirectRelation(relation.def, relation.otherPawn);
+        foreach (var relatedPawn in pokemon.relations.RelatedPawns.ToList())
+            foreach (var otherDirectRelation in relatedPawn.relations.DirectRelations.ToList())
+                if (otherDirectRelation.otherPawn == pokemon && !otherDirectRelation.def.reflexive)
+                    relatedPawn.relations.AddDirectRelation(otherDirectRelation.def, evolution);
 
         //Copy Abilities
         foreach (Ability ability in pokemon.abilities.abilities)

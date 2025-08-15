@@ -299,6 +299,41 @@
   <!--========================================-->
 
   <ThingDef ParentName="PW_EvolutionRockBase">
+    <defName>PW_DawnStone</defName>
+    <label>Dawn Stone</label>
+    <description>A peculiar stone that can make certain species of Pokémon evolve. It sparkles like a glittering eye.</description>
+    <graphicData>
+      <texPath>Things/Item/Evolution_Item/DawnStone/DawnStone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <RecipeDef ParentName="PW_EvolutionItemRecipeBase">
+    <defName>PW_ExposeDawnStone</defName>
+    <label>expose to Dawn Stone</label>
+    <description>expose the Pokémon to a Dawn Stone to make it evolve.</description>
+    <jobString>Exposing Pokémon to a Dawn Stone.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PW_DawnStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PW_DawnStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <!--========================================-->
+
+  <ThingDef ParentName="PW_EvolutionRockBase">
     <defName>PW_KingsRock</defName>
     <label>Kings Rock</label>
     <description>A peculiar stone that can make certain species of Pokémon evolve. It has the shape of a crown.</description>

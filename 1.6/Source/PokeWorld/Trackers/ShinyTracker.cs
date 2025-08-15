@@ -50,7 +50,7 @@ public class ShinyTracker : IExposable
         if (isShiny)
         {
             if (flagLetter && pokemonHolder.Spawned && (pokemonHolder.Faction == null || pokemonHolder.Faction ==
-                    Find.FactionManager.AllFactions.Where(f => f.def.defName == "PW_HostilePokemon").First()))
+                    Find.FactionManager.AllFactions.Where(f => f.def.defName == "PW_HostilePokemon").FirstOrDefault()))
             {
                 Letter letter = LetterMaker.MakeLetter(
                     "PW_ShinyPokemonLetter".Translate(), "PW_ShinyPokemonLetterDesc".Translate(),

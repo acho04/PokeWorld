@@ -5,4 +5,4 @@ Unoffical 1.6 update by The Moon Itself (Steam).
 
 Artists:
 Majority of sprites sourced from https://reliccastle.com/resources/670/, upscaled by Gargamiel using generative AI.
-Hand-drawn replacement sprites by Kay, ThiaQuiche, and Anonymous. See full credits spreadsheet at https://docs.google.com/spreadsheets/d/1dqyCFweUccmScdHlRmfy3G0Iqh05f0UdnP0KJNkQsy4/edit
+Hand-drawn replacement sprites by Kay, ThiaQuiche, and Anonymous. See full credits spreadsheet at https://docs.google.com/spreadsheets/d/1dqyCFweUccmScdHlRmfy3G0Iqh05f0UdnP0KJNkQsy4/

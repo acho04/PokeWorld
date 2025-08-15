@@ -7486,8 +7486,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.8</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/046_Paras/Desiccated_Paras</texPath>
+          <drawSize>1.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -8164,8 +8164,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.8</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/050_Diglett/Desiccated_Diglett</texPath>
+          <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -9525,15 +9525,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_1/058_Growlithe/Growlithe</texPath>
-          <drawSize>1.8</drawSize>
+          <drawSize>2</drawSize>
           <shadowData>
             <volume>(0.64, 0.46, 0.46)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/058_Growlithe/Desiccated_Growlithe</texPath>
+          <drawSize>2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -9685,8 +9685,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/059_Arcanine/Desiccated_Arcanine</texPath>
+          <drawSize>2.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -11698,15 +11698,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_1/072_Tentacool/Tentacool</texPath>
-          <drawSize>1.9</drawSize>
+          <drawSize>1.7</drawSize>
           <shadowData>
             <volume>(0.68, 0.49, 0.49)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.0</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/072_Tentacool/Desiccated_Tentacool</texPath>
+          <drawSize>1.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -11870,8 +11870,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/073_Tentacruel/Desiccated_Tentacruel</texPath>
+          <drawSize>2.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -15040,8 +15040,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.1</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/092_Gastly/Desiccated_Gastly</texPath>
+          <drawSize>2.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -15204,8 +15204,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/093_Haunter/Desiccated_Haunter</texPath>
+          <drawSize>2.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -15361,8 +15361,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.1</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/094_Gengar/Desiccated_Gengar</texPath>
+          <drawSize>2.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -16015,15 +16015,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_1/098_Krabby/Krabby</texPath>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.3</drawSize>
           <shadowData>
             <volume>(0.57, 0.41, 0.41)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.8</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/098_Krabby/Desiccated_Krabby</texPath>
+          <drawSize>1.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -16351,8 +16351,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/100_Voltorb/Desiccated_Voltorb</texPath>
+          <drawSize>1.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -16513,15 +16513,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_1/101_Electrode/Electrode</texPath>
-          <drawSize>2.1</drawSize>
+          <drawSize>1.8</drawSize>
           <shadowData>
             <volume>(0.74, 0.53, 0.53)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.1</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/101_Electrode/Desiccated_Electrode</texPath>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -18840,15 +18840,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_1/116_Horsea/Horsea</texPath>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.4</drawSize>
           <shadowData>
             <volume>(0.57, 0.41, 0.41)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.8</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/116_Horsea/Desiccated_Horsea</texPath>
+          <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -19996,8 +19996,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.1</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/123_Scyther/Desiccated_Scyther</texPath>
+          <drawSize>2.3</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -22479,15 +22479,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_1/138_Omanyte/Omanyte</texPath>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.2</drawSize>
           <shadowData>
             <volume>(0.57, 0.41, 0.41)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.8</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/138_Omanyte/Desiccated_Omanyte</texPath>
+          <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -22822,15 +22822,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_1/140_Kabuto/Kabuto</texPath>
-          <drawSize>1.7</drawSize>
+          <drawSize>1.4</drawSize>
           <shadowData>
             <volume>(0.60, 0.43, 0.43)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/140_Kabuto/Desiccated_Kabuto</texPath>
+          <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

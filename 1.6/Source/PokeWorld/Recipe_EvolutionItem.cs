@@ -19,10 +19,14 @@ public class Recipe_EvolutionItem : Recipe_Surgery
             var comp = pawn.TryGetComp<CompPokemon>();
             if (comp != null && comp.Evolutions != null)
                 foreach (var evo in comp.Evolutions)
+                {
                     if (PokeWorldSettings.GenerationAllowed(
-                            evo.pawnKind.race.GetCompProperties<CompProperties_Pokemon>().generation
-                        ))
+                            evo.pawnKind.race.GetCompProperties<CompProperties_Pokemon>().generation)
+                            && (evo.gender == Gender.None || evo.gender == pawn.gender) 
+                            && evo.requirement == EvolutionRequirement.item
+                        )
                         return true;
+                }
         }
 
         return false;

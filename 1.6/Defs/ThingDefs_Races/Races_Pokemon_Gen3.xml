@@ -4718,13 +4718,12 @@
             <pawnKind>PW_Gardevoir</pawnKind>
             <requirement>level</requirement>
             <level>30</level>
-            <gender>Female</gender>
           </li>
           <li>
             <pawnKind>PW_Gallade</pawnKind>
-            <requirement>level</requirement>
-            <level>30</level>
+            <requirement>item</requirement>
             <gender>Male</gender>
+            <item>PW_DawnStone</item>
           </li>
         </evolutions>
         <moves>
@@ -4832,6 +4831,7 @@
       <li>PW_AdministerHealPowder</li>
       <li>PW_GiveOneRareCandy</li>
       <li>PW_GiveFiveRareCandy</li>
+      <li>PW_ExposeDawnStone</li>
     </recipes>
     <tradeTags>
       <li>PW_PokemonRare</li>
@@ -17767,12 +17767,11 @@
             <pawnKind>PW_Glalie</pawnKind>
             <requirement>level</requirement>
             <level>42</level>
-            <gender>Male</gender>
           </li>
           <li>
             <pawnKind>PW_Froslass</pawnKind>
-            <requirement>level</requirement>
-            <level>42</level>
+            <requirement>item</requirement>
+            <item>PW_DawnStone</item>
             <gender>Female</gender>
           </li>
         </evolutions>
@@ -17906,6 +17905,7 @@
       <li>PW_AdministerHealPowder</li>
       <li>PW_GiveOneRareCandy</li>
       <li>PW_GiveFiveRareCandy</li>
+      <li>PW_ExposeDawnStone</li>
     </recipes>
     <tradeTags>
       <li>PW_PokemonCommon</li>
