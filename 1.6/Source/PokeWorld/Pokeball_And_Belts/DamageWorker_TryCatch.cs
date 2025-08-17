@@ -50,7 +50,7 @@ internal class DamageWorker_TryCatch : DamageWorker
                             }
                             pawn.ClearMind();
                             compPokemon.ballDef = compPokeballBelt.ballDef;
-                            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(compPokemon.PokedexNumber, pawn.kindDef);
+                            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawn.kindDef);
                             PutInBallUtility.PutPokemonInBall(pawn);
                             if (instigator.Faction != null && instigator.Faction == Faction.OfPlayer &&
                                 instigator.skills != null &&

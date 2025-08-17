@@ -286,7 +286,7 @@ public class LevelTracker : IExposable
             Copy(preEvoPokemon, postEvoPokemon);
             GenSpawn.Spawn(postEvoPokemon, preEvoPokemon.Position, preEvoPokemon.Map);
             if (faction == Faction.OfPlayer)
-                Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(postEvoPokemon.GetComp<CompPokemon>().PokedexNumber, postEvoPokemon.kindDef);
+                Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(postEvoPokemon.kindDef);
             if (SwapAnimalToSapientVersion != null && !preEvoPokemon.IsAnimal && postEvoPokemon.IsAnimal) //BigAndSmall detected, make our evolved form sapient.
             {
                 Pawn result = SwapAnimalToSapientVersion.Invoke(null, [postEvoPokemon]) as Pawn;

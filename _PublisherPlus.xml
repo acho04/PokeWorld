@@ -3,9 +3,8 @@
   <Excluded>
     <exclude>.git</exclude>
     <exclude>.idea</exclude>
-    <exclude>1.4\Source</exclude>
-    <exclude>1.5\Source</exclude>
     <exclude>1.6\Source</exclude>
+    <exclude>Assets</exclude>
     <exclude>Release</exclude>
     <exclude>PokeWorld.zip</exclude>
     <exclude>Compat\BS_Sapient_Animals\1.6\Source</exclude>

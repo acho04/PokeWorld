@@ -9,127 +9,153 @@ namespace PokeWorld;
 
 public sealed class PokedexManager(World world) : WorldComponent(world)
 {
-    private Dictionary<int, PawnKindDef> discoveredForm = new();
-    private Dictionary<PawnKindDef, PokemonPokedexState> pokedex = new();
+    private Dictionary<int, PokedexEntry> pokedex = new Dictionary<int, PokedexEntry>();
+    
+    
+    private Dictionary<int, PawnKindDef> deprecated_discoveredForm = new();
+    private Dictionary<PawnKindDef, PokemonPokedexState> deprecated_pokedex = new();
 
     public int TotalSeen()
     {
-        return pokedex.Values.Count(x => x is PokemonPokedexState.Seen or PokemonPokedexState.Caught);
+        return pokedex.Values.Count(x => x.seen);
     }
 
     public int TotalSeen(int generation, bool includeLegendaries = true)
     {
         if (includeLegendaries)
-            return pokedex.Count(
-                x => x.Key.race.HasComp(typeof(CompPokemon)) &&
-                     x.Key.race.GetCompProperties<CompProperties_Pokemon>().generation == generation &&
-                     x.Value is PokemonPokedexState.Seen or PokemonPokedexState.Caught
+            return pokedex.Values.Count(
+                v => v.variants.Any(x => x.Key.race.HasComp(typeof(CompPokemon)) &&
+                         x.Key.race.GetCompProperties<CompProperties_Pokemon>().generation == generation &&
+                         x.Value is PokemonPokedexState.Seen or PokemonPokedexState.Caught)
             );
 
-        return pokedex.Count(
-            x => x.Key.race.HasComp(typeof(CompPokemon)) &&
-                 x.Key.race.GetCompProperties<CompProperties_Pokemon>().generation == generation &&
-                 !x.Key.race.GetCompProperties<CompProperties_Pokemon>().attributes
-                     .Contains(PokemonAttribute.Legendary) &&
-                 x.Value is PokemonPokedexState.Seen or PokemonPokedexState.Caught
+        return pokedex.Values.Count(
+            v => v.variants.Any(x => x.Key.race.HasComp(typeof(CompPokemon)) &&
+                                x.Key.race.GetCompProperties<CompProperties_Pokemon>().generation == generation &&
+                                !x.Key.race.GetCompProperties<CompProperties_Pokemon>().attributes
+                                    .Contains(PokemonAttribute.Legendary) &&
+                                x.Value is PokemonPokedexState.Seen or PokemonPokedexState.Caught)
         );
     }
 
     public int TotalCaught()
     {
-        return pokedex.Values.Count(x => x == PokemonPokedexState.Caught);
+        return pokedex.Values.Count(x => x.caught);
     }
 
     public int TotalCaught(int generation, bool includeLegendaries = true)
     {
         if (includeLegendaries)
-            return pokedex.Count(
-                x => x.Key.race.HasComp(typeof(CompPokemon)) &&
-                     x.Key.race.GetCompProperties<CompProperties_Pokemon>().generation == generation &&
-                     x.Value == PokemonPokedexState.Caught
+            return pokedex.Values.Count(
+                v => v.variants.Any(x => x.Key.race.HasComp(typeof(CompPokemon)) &&
+                                    x.Key.race.GetCompProperties<CompProperties_Pokemon>().generation == generation &&
+                                    x.Value == PokemonPokedexState.Caught)
             );
-        return pokedex.Count(
-            x => x.Key.race.HasComp(typeof(CompPokemon)) &&
-                 x.Key.race.GetCompProperties<CompProperties_Pokemon>().generation == generation &&
-                 !x.Key.race.GetCompProperties<CompProperties_Pokemon>().attributes
-                     .Contains(PokemonAttribute.Legendary) && x.Value == PokemonPokedexState.Caught
+        return pokedex.Values.Count(
+            v => v.variants.Any(x => x.Key.race.HasComp(typeof(CompPokemon)) &&
+                                x.Key.race.GetCompProperties<CompProperties_Pokemon>().generation == generation &&
+                                !x.Key.race.GetCompProperties<CompProperties_Pokemon>().attributes.Contains(PokemonAttribute.Legendary) &&
+                                x.Value == PokemonPokedexState.Caught)
         );
     }
 
     public override void ExposeData()
-    { 
-        Scribe_Collections.Look(ref discoveredForm, "PW_discoverdForms", LookMode.Value, LookMode.Def);
-        Scribe_Collections.Look(ref pokedex, "PW_pokedex", LookMode.Def, LookMode.Value);
+    {
+        if (Scribe.mode == LoadSaveMode.LoadingVars)
+        {
+            Scribe_Collections.Look(ref deprecated_discoveredForm, "PW_discoverdForms", LookMode.Value, LookMode.Def);
+            Scribe_Collections.Look(ref deprecated_pokedex, "PW_pokedex", LookMode.Def, LookMode.Value);
+        }
+
+        Scribe_Collections.Look(ref pokedex, "PW_pokedexEntries", LookMode.Value, LookMode.Deep);
         
         //Fix any potential corruption
         if (Scribe.mode == LoadSaveMode.PostLoadInit)
         {
-            if (discoveredForm == null)
-                discoveredForm = new();
             if (pokedex == null)
                 pokedex = new();
 
-            foreach (var kvp in pokedex)
+            if(deprecated_pokedex != null)
             {
-                var pawnKind = kvp.Key;
-                if (!pawnKind.race.HasComp(typeof(CompPokemon)))
-                    continue;
-                var dexNumber = pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber;
-                if (!discoveredForm.ContainsKey(dexNumber))
-                    discoveredForm.Add(dexNumber, kvp.Key);
-            }
-            foreach (var kvp in discoveredForm)
-            {
-                var pawnKind = kvp.Value;
-                if (!pokedex.ContainsKey(pawnKind))
-                    discoveredForm.Remove(kvp.Key);
+                foreach (var kvp in deprecated_pokedex)
+                {
+                    var pawnKind = kvp.Key;
+                    if (!pawnKind.race.HasComp(typeof(CompPokemon)))
+                        continue;
+                    var dexNumber = pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber;
+                    if (!pokedex.ContainsKey(dexNumber))
+                    {
+                        PokedexEntry newEntry = new PokedexEntry(dexNumber);
+                        newEntry.variants.Add(kvp.Key, kvp.Value);
+                        pokedex.Add(dexNumber, newEntry);
+                    }
+                }
             }
         }
     }
 
     public bool IsPokemonSeen(int dexNumber)
     {
-        if (!discoveredForm.TryGetValue(dexNumber, out var pawnKind)) return false;
-        pokedex.TryGetValue(pawnKind, out var value);
-        return value == PokemonPokedexState.Seen || value == PokemonPokedexState.Caught;
+        if (!pokedex.TryGetValue(dexNumber, out var dexEntry)) return false;
+        return dexEntry.seen;
+    }
+
+    public bool IsPokemonSeen(PawnKindDef pawnKind)
+    {
+        if(!pokedex.TryGetValue(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber, out var dexEntry)) return false;
+        dexEntry.variants.TryGetValue(pawnKind, out var state);
+        return state == PokemonPokedexState.Seen || state == PokemonPokedexState.Caught;
     }
 
     public bool IsPokemonCaught(int dexNumber)
     {
-        if (!discoveredForm.TryGetValue(dexNumber, out var pawnKind)) return false;
-        pokedex.TryGetValue(pawnKind, out var value);
-        return value == PokemonPokedexState.Caught;
+        if (!pokedex.TryGetValue(dexNumber, out var dexEntry)) return false;
+        return dexEntry.caught;
     }
 
-    public void AddPokemonKindSeen(int dexNumber, PawnKindDef pawnKind)
+    public bool IsPokemonCaught(PawnKindDef pawnKind)
+    {
+        if (!pokedex.TryGetValue(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber, out var dexEntry)) return false;
+        dexEntry.variants.TryGetValue(pawnKind, out var state);
+        return state == PokemonPokedexState.Caught;
+    }
+
+    public void AddPokemonKindSeen(PawnKindDef pawnKind)
     {
         if (!pawnKind.race.HasComp(typeof(CompPokemon))) return;
 
-        if (!discoveredForm.TryGetValue(dexNumber, out var baseKind))
+        var dexNumber = pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber;
+        if (!pokedex.TryGetValue(dexNumber, out var dexEntry))
         {
-            discoveredForm[dexNumber] = pawnKind;
-            pokedex[pawnKind] = PokemonPokedexState.Seen;
-        }
-        else if (!pokedex.ContainsKey(baseKind) || pokedex[baseKind] == PokemonPokedexState.None)
-            pokedex[baseKind] = PokemonPokedexState.Seen;
-    }
-
-    public void AddPokemonKindCaught(int dexNumber, PawnKindDef pawnKind)
-    {
-        if (!pawnKind.race.HasComp(typeof(CompPokemon))) return;
-        if (!discoveredForm.TryGetValue(dexNumber, out var baseKind))
-        {
-            discoveredForm[dexNumber] = pawnKind;
-            pokedex[pawnKind] = PokemonPokedexState.Caught;
+            dexEntry = new(dexNumber);
+            dexEntry.variants.Add(pawnKind, PokemonPokedexState.Seen);
+            pokedex[dexNumber] = dexEntry;
             return;
         }
-        pokedex[baseKind] = PokemonPokedexState.Caught;
+        if (!dexEntry.variants.TryGetValue(pawnKind, out var value) || (value != PokemonPokedexState.Seen && value != PokemonPokedexState.Caught))
+            dexEntry.variants[pawnKind] = PokemonPokedexState.Seen;
+    }
+
+    public void AddPokemonKindCaught(PawnKindDef pawnKind)
+    {
+        if (!pawnKind.race.HasComp(typeof(CompPokemon))) return;
+
+        var dexNumber = pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber;
+        if (!pokedex.TryGetValue(dexNumber, out var dexEntry))
+        {
+            dexEntry = new(dexNumber);
+            dexEntry.variants.Add(pawnKind, PokemonPokedexState.Caught);
+            pokedex[dexNumber] = dexEntry;
+            return;
+        }
+        if (!dexEntry.variants.TryGetValue(pawnKind, out var value) || value != PokemonPokedexState.Caught)
+            dexEntry.variants[pawnKind] = PokemonPokedexState.Caught;
     }
 
     public void DebugFillPokedex()
     {
         foreach (var allDef in DefDatabase<PawnKindDef>.AllDefs.Where(x => x.race.HasComp(typeof(CompPokemon))))
-            AddPokemonKindCaught(allDef.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber, allDef);
+            AddPokemonKindCaught(allDef);
     }
 
     public void DebugFillPokedexNoLegendary()
@@ -137,6 +163,6 @@ public sealed class PokedexManager(World world) : WorldComponent(world)
         foreach (var allDef in DefDatabase<PawnKindDef>.AllDefs.Where(
                      x => x.race.HasComp(typeof(CompPokemon)) && !x.race.GetCompProperties<CompProperties_Pokemon>()
                          .attributes.Contains(PokemonAttribute.Legendary)
-                 )) AddPokemonKindCaught(allDef.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber, allDef);
+                 )) AddPokemonKindCaught(allDef);
     }
 }

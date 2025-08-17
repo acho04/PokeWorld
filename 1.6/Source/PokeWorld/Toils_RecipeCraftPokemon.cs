@@ -200,7 +200,7 @@ public static class Toils_RecipeCraftPokemon
             pawnKind, Faction.OfPlayer,
             actor.Position, actor.Map, actor, true, isFossil
         );
-        Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber, pawnKind);
+        Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawnKind);
         Messages.Message(
             message.Translate(actor.LabelShortCap, revivedPokemon.KindLabel), revivedPokemon,
             MessageTypeDefOf.PositiveEvent

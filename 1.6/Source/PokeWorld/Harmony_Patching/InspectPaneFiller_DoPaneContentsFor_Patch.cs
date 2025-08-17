@@ -41,7 +41,7 @@ internal class InspectPaneFiller_DoPaneContentsFor_Patch
 
                     var row = new WidgetRow(num, 3f);
                     DrawExperience(row, comp, flagFaction);
-                    if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(comp.PokedexNumber))
+                    if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawn.kindDef))
                     {
                         float num2;
                         if (flagFaction)

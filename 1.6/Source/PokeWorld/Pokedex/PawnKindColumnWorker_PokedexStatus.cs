@@ -12,9 +12,9 @@ public class PawnKindColumnWorker_PokedexStatus : PawnKindColumnWorker_Icon
     protected override Texture2D GetIconFor(PawnKindDef pawnKind)
     {
         if (!pawnKind.race.HasComp(typeof(CompPokemon))) return null;
-        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber))
+        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawnKind))
             return caughtIcon;
-        if (Find.World.GetComponent<PokedexManager>().IsPokemonSeen(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber)) return seenIcon;
+        if (Find.World.GetComponent<PokedexManager>().IsPokemonSeen(pawnKind)) return seenIcon;
         return null;
     }
 }
