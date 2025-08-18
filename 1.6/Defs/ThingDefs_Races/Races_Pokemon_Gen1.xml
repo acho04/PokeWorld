@@ -23181,15 +23181,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_1/142_Aerodactyl/Aerodactyl</texPath>
-          <drawSize>2.4</drawSize>
+          <drawSize>3.0</drawSize>
           <shadowData>
             <volume>(0.84, 0.60, 0.60)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_1/142_Aerodactyl/Desiccated_Aerodactyl</texPath>
+          <drawSize>3.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

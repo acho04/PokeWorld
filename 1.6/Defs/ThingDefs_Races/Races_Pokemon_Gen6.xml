@@ -11165,8 +11165,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>3.7</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_6/717_Yveltal/Desiccated_Yveltal</texPath>
+          <drawSize>7.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

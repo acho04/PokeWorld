@@ -118,7 +118,7 @@ internal class FloatMenuOptionProvider_PokemonDraftedMove : FloatMenuOptionProvi
         }
         else
         {
-            Job job = JobMaker.MakeJob(JobDefOf.Goto, gotoLoc);
+            Job job = JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("PW_PokemonGotoForced"), gotoLoc);
             if (pawn.Map.exitMapGrid.IsExitCell(clickCell))
             {
                 job.exitMapOnArrival = !pawn.IsColonyMech;

@@ -15393,8 +15393,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/243_Raikou/Desiccated_Raikou</texPath>
+          <drawSize>2.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

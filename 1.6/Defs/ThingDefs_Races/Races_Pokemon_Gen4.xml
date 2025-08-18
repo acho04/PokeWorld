@@ -2488,15 +2488,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_4/401_Kricketot/Kricketot</texPath>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.0</drawSize>
           <shadowData>
             <volume>(0.55, 0.39, 0.39)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.8</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_4/401_Kricketot/Desiccated_Kricketot</texPath>
+          <drawSize>1.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -14677,15 +14677,15 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Pokemon/Gen_4/475_Gallade/Gallade</texPath>
-          <drawSize>2.3</drawSize>
+          <drawSize>1.8</drawSize>
           <shadowData>
             <volume>(0.81, 0.58, 0.58)</volume>
             <offset>(0.00, 0.00, -0.30)</offset>
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_4/475_Gallade/Desiccated_Gallade</texPath>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
