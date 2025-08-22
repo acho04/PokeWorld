@@ -8,6 +8,8 @@ namespace PokeWorld;
 public class QuestConditionDef : Def
 {
     public List<GenerationRequirement> generationsRequirements;
+    public int allGenerationsMinSeen = -1;
+    public int allGenerationsMinCaught = -1;
     public QuestScriptDef questScriptDef;
     public int requiredCaughtMinCount = -1;
     public List<PawnKindDef> requiredKindCaught;
@@ -17,6 +19,10 @@ public class QuestConditionDef : Def
     public bool CheckCompletion()
     {
         var pokedex = Find.World.GetComponent<PokedexManager>();
+
+        if (pokedex.TotalSeen() < allGenerationsMinSeen || pokedex.TotalCaught() < allGenerationsMinCaught)
+            return false;
+
         if (requiredKindSeen != null)
         {
             if (requiredSeenMinCount == -1) requiredSeenMinCount = requiredKindSeen.Count();

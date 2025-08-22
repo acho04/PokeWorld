@@ -20,6 +20,22 @@ public sealed class PokedexManager(World world) : WorldComponent(world)
         return pokedex.Values.Count(x => x.seen);
     }
 
+    public int TotalSeen(bool includeLegendaries = true)
+    {
+        if (includeLegendaries)
+            return pokedex.Values.Count(
+                v => v.variants.Any(x => x.Key.race.HasComp(typeof(CompPokemon)) &&
+                         x.Value is PokemonPokedexState.Seen or PokemonPokedexState.Caught)
+            );
+
+        return pokedex.Values.Count(
+            v => v.variants.Any(x => x.Key.race.HasComp(typeof(CompPokemon)) &&
+                                !x.Key.race.GetCompProperties<CompProperties_Pokemon>().attributes
+                                    .Contains(PokemonAttribute.Legendary) &&
+                                x.Value is PokemonPokedexState.Seen or PokemonPokedexState.Caught)
+        );
+    }
+
     public int TotalSeen(int generation, bool includeLegendaries = true)
     {
         if (includeLegendaries)
@@ -41,6 +57,20 @@ public sealed class PokedexManager(World world) : WorldComponent(world)
     public int TotalCaught()
     {
         return pokedex.Values.Count(x => x.caught);
+    }
+
+    public int TotalCaught(bool includeLegendaries = true)
+    {
+        if (includeLegendaries)
+            return pokedex.Values.Count(
+                v => v.variants.Any(x => x.Key.race.HasComp(typeof(CompPokemon)) &&
+                                    x.Value == PokemonPokedexState.Caught)
+            );
+        return pokedex.Values.Count(
+            v => v.variants.Any(x => x.Key.race.HasComp(typeof(CompPokemon)) &&
+                                !x.Key.race.GetCompProperties<CompProperties_Pokemon>().attributes.Contains(PokemonAttribute.Legendary) &&
+                                x.Value == PokemonPokedexState.Caught)
+        );
     }
 
     public int TotalCaught(int generation, bool includeLegendaries = true)
@@ -102,7 +132,9 @@ public sealed class PokedexManager(World world) : WorldComponent(world)
 
     public bool IsPokemonSeen(PawnKindDef pawnKind)
     {
-        if(!pokedex.TryGetValue(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber, out var dexEntry)) return false;
+        if (pawnKind?.race == null) return false;
+        var compPropPokemon = pawnKind.race.GetCompProperties<CompProperties_Pokemon>();
+        if (compPropPokemon == null || !pokedex.TryGetValue(compPropPokemon.pokedexNumber, out var dexEntry)) return false;
         dexEntry.variants.TryGetValue(pawnKind, out var state);
         return state == PokemonPokedexState.Seen || state == PokemonPokedexState.Caught;
     }
@@ -115,13 +147,16 @@ public sealed class PokedexManager(World world) : WorldComponent(world)
 
     public bool IsPokemonCaught(PawnKindDef pawnKind)
     {
-        if (!pokedex.TryGetValue(pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber, out var dexEntry)) return false;
+        if (pawnKind?.race == null) return false;
+        var compPropPokemon = pawnKind.race.GetCompProperties<CompProperties_Pokemon>();
+        if (compPropPokemon == null || !pokedex.TryGetValue(compPropPokemon.pokedexNumber, out var dexEntry)) return false;
         dexEntry.variants.TryGetValue(pawnKind, out var state);
         return state == PokemonPokedexState.Caught;
     }
 
     public void AddPokemonKindSeen(PawnKindDef pawnKind)
     {
+        if (pawnKind?.race == null) return;
         if (!pawnKind.race.HasComp(typeof(CompPokemon))) return;
 
         var dexNumber = pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber;
@@ -138,6 +173,7 @@ public sealed class PokedexManager(World world) : WorldComponent(world)
 
     public void AddPokemonKindCaught(PawnKindDef pawnKind)
     {
+        if (pawnKind?.race == null) return;
         if (!pawnKind.race.HasComp(typeof(CompPokemon))) return;
 
         var dexNumber = pawnKind.race.GetCompProperties<CompProperties_Pokemon>().pokedexNumber;

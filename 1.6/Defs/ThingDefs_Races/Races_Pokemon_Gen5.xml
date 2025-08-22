@@ -23217,8 +23217,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.0</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_5/636_Larvesta/Desiccated_Larvesta</texPath>
+          <drawSize>2.1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

@@ -1710,8 +1710,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/161_Sentret/Desiccated_Sentret</texPath>
+          <drawSize>1.9</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -2039,8 +2039,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/163_Hoothoot/Desiccated_Hoothoot</texPath>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -3214,8 +3214,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/170_Chinchou/Desiccated_Chinchou</texPath>
+          <drawSize>1.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -15560,8 +15560,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>1.3</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/244_Entei/Desiccated_Entei</texPath>
+          <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -15899,8 +15899,8 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/PokemonDessicated/PokemonDessicated</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Pawn/Pokemon/Gen_2/246_Larvitar/Desiccated_Larvitar</texPath>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>

@@ -57,6 +57,9 @@ public class CompPokemon : ThingComp
 
     public Pawn Pokemon => (Pawn)parent;
 
+    public PawnKindDef Override_KindDef;
+    public PawnKindDef pawnKindDef => Override_KindDef ?? Pokemon?.kindDef;
+
     public override void Initialize(CompProperties props)
     {
         base.Initialize(props);
@@ -70,7 +73,7 @@ public class CompPokemon : ThingComp
         if (!Pokemon.Position.Fogged(Pokemon.Map))
         {
             var pokedex = Find.World.GetComponent<PokedexManager>();
-            if (!pokedex.IsPokemonSeen(Pokemon.kindDef)) pokedex.AddPokemonKindSeen(Pokemon.kindDef);
+            if (!pokedex.IsPokemonSeen(pawnKindDef)) pokedex.AddPokemonKindSeen(pawnKindDef);
         }
 
         statTracker?.UpdateStats();
@@ -86,21 +89,21 @@ public class CompPokemon : ThingComp
         if (inBall && Pokemon.Spawned) inBall = false;
         if (flagIsPokedexSeen == null)
         {
-            flagIsPokedexSeen = Find.World.GetComponent<PokedexManager>().IsPokemonSeen(Pokemon.kindDef);
+            flagIsPokedexSeen = Find.World.GetComponent<PokedexManager>().IsPokemonSeen(pawnKindDef);
         }
         else if (!(bool)flagIsPokedexSeen && Pokemon.Spawned && !Pokemon.Position.Fogged(Pokemon.Map))
         {
-            Find.World.GetComponent<PokedexManager>().AddPokemonKindSeen(Pokemon.kindDef);
+            Find.World.GetComponent<PokedexManager>().AddPokemonKindSeen(pawnKindDef);
             flagIsPokedexSeen = true;
         }
 
         if (flagIsPokedexCaught == null)
         {
-            flagIsPokedexCaught = Find.World.GetComponent<PokedexManager>().IsPokemonCaught(Pokemon.kindDef);
+            flagIsPokedexCaught = Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawnKindDef);
         }
         else if (!(bool)flagIsPokedexCaught && Pokemon.Faction == Faction.OfPlayer)
         {
-            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(Pokemon.kindDef);
+            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawnKindDef);
             flagIsPokedexCaught = true;
         }
     }
@@ -136,7 +139,7 @@ public class CompPokemon : ThingComp
         string typeDescription = "PW_StatTypeDesc".Translate() + "\n";
         var evolutionValue = "";
         string evolutionDescription = "PW_StatEvolutionDesc".Translate() + "\n";
-        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(Pokemon.kindDef))
+        if (Find.World.GetComponent<PokedexManager>().IsPokemonCaught(pawnKindDef))
         {
             foreach (var eggGroupDef in EggGroups)
             {
@@ -362,7 +365,7 @@ public class CompPokemon : ThingComp
             Pokemon.SetFaction(Faction.OfPlayer, playerNegotiator);
             Pokemon.training.Train(DefDatabase<TrainableDef>.GetNamed("Obedience"), playerNegotiator, true);
             Pokemon.training.SetWantedRecursive(DefDatabase<TrainableDef>.GetNamed("Obedience"), true);
-            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(Pokemon.kindDef);
+            Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawnKindDef);
         }
         else if (action == TradeAction.PlayerSells)
         {

@@ -46,6 +46,8 @@ namespace PokeWorld
             newComp.inBall = oldComp.inBall;
             newComp.tryCatchKillChanceIfDown = oldComp.tryCatchKillChanceIfDown;
             newComp.wantPutInBall = oldComp.wantPutInBall;
+
+            newComp.Override_KindDef = oldComp.Override_KindDef ?? oldComp.Pokemon.kindDef;
         }
     }
 }
