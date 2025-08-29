@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Class="PokeWorld.TMDef" ParentName="ResourceBase">
+    <defName>PW_TechnicalMachine</defName>
+    <label>TM</label>
+    <graphicData>
+      <texPath>Things/Item/TMs/TM_Typeless</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>PokeWorld.Technical_Machine</thingClass>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>300</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>PW_Item</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="PokeWorld.CompProperties_Targetable_PW_TutorMove"/>
+      <li Class="PokeWorld.CompProperties_TargetEffect_UseItemOnPawn">
+        <useJob>PW_UseTMOnPokemon</useJob>
+      </li>
+    </comps>
+    <TM_Moves>
+      <li>Acrobatics</li>
+      <li>Blizzard</li>
+      <li>CloseCombat</li>
+      <li>Crunch</li>
+      <li>DarkPulse</li>
+      <li>DoubleEdge</li>
+      <li>DragonClaw</li>
+      <li>DragonPulse</li>
+      <li>DragonTail</li>
+      <li>EarthPower</li>
+      <li>Earthquake</li>
+      <li>ElectroBall</li>
+      <li>FireBlast</li>
+      <li>FireFang</li>
+      <li>FirePunch</li>
+      <li>Flamethrower</li>
+      <li>FlashCannon</li>
+      <li>GigaDrain</li>
+      <li>GyroBall</li>
+      <li>Headbutt</li>
+      <li>Hex</li>
+      <li>HydroPump</li>
+      <li>HyperBeam</li>
+      <li>IceBeam</li>
+      <li>IceFang</li>
+      <li>IcePunch</li>
+      <li>IcyWind</li>
+      <li>IronHead</li>
+      <li>LeechLife</li>
+      <li>LowKick</li>
+      <li>MagicalLeaf</li>
+      <li>MetalClaw</li>
+      <li>MudShot</li>
+      <li>Outrage</li>
+      <li>PlayRough</li>
+      <li>PoisonJab</li>
+      <li>PowerGem</li>
+      <li>Psybeam</li>
+      <li>RockBlast</li>
+      <li>RockSlide</li>
+      <li>SandTomb</li>
+      <li>ShadowBall</li>
+      <li>SolarBeam</li>
+      <li>StoneEdge</li>
+      <li>Swift</li>
+      <li>TakeDown</li>
+      <li>Thunder</li>
+      <li>ThunderFang</li>
+      <li>ThunderPunch</li>
+      <li>Thunderbolt</li>
+      <li>WaterPulse</li>
+      <li>XScissor</li>
+      <li>ZenHeadbutt</li>
+    </TM_Moves>
+  </ThingDef> 
+</Defs>

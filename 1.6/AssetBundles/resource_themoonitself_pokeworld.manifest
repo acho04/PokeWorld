@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3260136994
+CRC: 2494313851
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: aeaafde04dbf679db47c3e22f819b5af
+    Hash: 71894c62ac599bf257376f4cd8a298d5
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2612ac43db082a73502ee80f2eceb73f
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: aeaafde04dbf679db47c3e22f819b5af
+    Hash: 71894c62ac599bf257376f4cd8a298d5
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -22,6 +22,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/553_Krookodile/Krookodile_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Item/Fossils/Odd_Keystone.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownPShiny_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/709_Trevenant/TrevenantShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/245_Suicune/SuicuneShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/789_Cosmog/CosmogShiny_south.png
@@ -71,6 +72,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/211_Qwilfish/QwilfishShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/106_Hitmonlee/HitmonleePack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/109_Koffing/KoffingPack_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/276_Taillow/Taillow_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/783_HakamoO/HakamoO_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/239_Elekid/ElekidShiny_east.dds
@@ -291,6 +293,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/791_Solgaleo/SolgaleoPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/511_Pansage/Pansage_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/715_Noivern/NoivernPack_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/441_Chatot/Chatot_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/724_Decidueye/DecidueyeShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/393_Piplup/PiplupShiny_north.png
@@ -470,7 +473,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownOShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/459_Snover/SnoverShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/668_Pyroar/PyroarMale_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/193_Yanma/YanmaPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/308_Medicham/MedichamPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/529_Drilbur/Drilbur_east.dds
@@ -548,6 +550,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/251_Celebi/CelebiShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/325_Spoink/SpoinkPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/341_Corphish/CorphishShiny_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/716_Xerneas/Xerneas_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/333_Swablu/SwabluPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/594_Alomomola/AlomomolaPack_north.png
@@ -939,6 +942,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/042_Golbat/GolbatPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/230_Kingdra/KingdraPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/625_Bisharp/BisharpPack_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Fire.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/728_Popplio/PopplioPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/604_Eelektross/EelektrossShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/831_Wooloo/WoolooShiny_south.dds
@@ -1083,12 +1087,11 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/479_Rotom/RotomNormal_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/272_Ludicolo/LudicoloShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/767_Wimpod/WimpodPack_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/718_Zygarde/ZygardeShiny_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/738_Vikavolt/Vikavolt_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/422_Shellos/Shellos_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/502_Dewott/Dewott_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/257_Blaziken/Desiccated_Blaziken.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/738_Vikavolt/Vikavolt_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/773_Silvally/SilvallyWater_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/078_Rapidash/RapidashShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/074_Geodude/Geodude_east.png
@@ -1986,9 +1989,9 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/774_Minior/MiniorShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/779_Bruxish/Bruxish_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/228_Houndour/Houndour_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Dragon.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/592_Frillish/FrillishMalePack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/704_Goomy/GoomyPack_north.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/895_Regidrago/Regidrago_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/054_Psyduck/PsyduckShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/248_Tyranitar/TyranitarShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/701_Hawlucha/Hawlucha_east.dds
@@ -2006,6 +2009,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/582_Vanillite/VanilliteShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/602_Tynamo/Tynamo_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/776_Turtonator/TurtonatorPack_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/895_Regidrago/Regidrago_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/649_Genesect/GenesectForm1_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/035_Clefairy/Clefairy_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/357_Tropius/TropiusPack_north.png
@@ -2671,7 +2675,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/185_Sudowoodo/Sudowoodo_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/184_Azumarill/AzumarillShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/727_Incineroar/IncineroarPack_south.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/750_Mudsdale/MudsdaleShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/328_Trapinch/Trapinch_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/494_Victini/VictiniShiny_south.png
@@ -2753,10 +2756,11 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/194_Wooper/Wooper_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/695_Heliolisk/HelioliskShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/061_Poliwhirl/PoliwhirlShiny_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Ice.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/338_Solrock/SolrockShiny_south.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/640_Virizion/Virizion_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/006_Charizard/CharizardPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/853_Grapploct/Grapploct_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/640_Virizion/Virizion_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/862_Obstagoon/ObstagoonPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/170_Chinchou/ChinchouPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/727_Incineroar/Incineroar_north.png
@@ -2993,7 +2997,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/450_Hippowdon/HippowdonFemalePack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/320_Wailmer/Wailmer_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/678_Meowstic/MeowsticMalePack_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/812_Rillaboom/Rillaboom_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/139_Omastar/OmastarShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/545_Scolipede/Scolipede_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/493_Arceus/ArceusGroundShiny_south.png
@@ -3003,6 +3007,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/350_Milotic/MiloticPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/150_Mewtwo/MewtwoPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/398_Staraptor/StaraptorShiny_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/812_Rillaboom/Rillaboom_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/761_Bounsweet/BounsweetShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/582_Vanillite/VanillitePack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/887_Dragapult/DragapultPack_north.dds
@@ -3294,6 +3299,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/229_Houndoom/Houndoom_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/751_Dewpider/Dewpider_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/528_Swoobat/SwoobatPack_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/600_Klang/KlangPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/728_Popplio/PopplioPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/095_Onix/OnixPack_north.png
@@ -3340,6 +3346,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/632_Durant/DurantShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/082_Magneton/Magneton_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/860_Morgrem/MorgremPack_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Psychic.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/746_Wishiwashi/WishiwashiSolo_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/574_Gothita/Gothita_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/608_Lampent/LampentShiny_south.dds
@@ -3550,6 +3557,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/614_Beartic/BearticPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/703_Carbink/CarbinkShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/136_Flareon/FlareonShiny_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/046_Paras/ParasShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/838_Carkol/CarkolShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/515_Panpour/PanpourShiny_north.png
@@ -3950,6 +3958,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/489_Phione/PhioneShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/172_Pichu/PichuSpikyShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/768_Golisopod/GolisopodPack_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/477_Dusknoir/DusknoirPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/024_Arbok/Arbok_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/048_Venonat/VenonatShiny_east.dds
@@ -4282,7 +4291,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/364_Sealeo/SealeoPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/292_Shedinja/ShedinjaShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/008_Wartortle/Wartortle_south.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/286_Breloom/BreloomPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/289_Slaking/SlakingPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/116_Horsea/Horsea_north.png
@@ -4619,6 +4627,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/174_Igglybuff/IgglybuffPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/794_Buzzwole/BuzzwoleShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/407_Roserade/RoseradeShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Fighting.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownFShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/486_Regigigas/RegigigasPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/134_Vaporeon/VaporeonShiny_north.dds
@@ -4788,11 +4797,12 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/849_Toxtricity/ToxtricityForm1_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/649_Genesect/GenesectForm3_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/234_Stantler/Stantler_north.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/748_Toxapex/ToxapexPack_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Fairy.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/234_Stantler/Stantler_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/375_Metang/MetangShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/389_Torterra/Torterra_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/067_Machoke/MachokeShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/748_Toxapex/ToxapexPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/876_Indeedee/IndeedeeMaleShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/530_Excadrill/Excadrill_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/800_Necrozma/NecrozmaUltra_south.dds
@@ -4810,6 +4820,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/832_Dubwool/DubwoolPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/283_Surskit/SurskitPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/800_Necrozma/Necrozma_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/260_Swampert/SwampertPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/779_Bruxish/Bruxish_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/447_Riolu/Riolu_south.dds
@@ -4850,7 +4861,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/425_Drifloon/DrifloonShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/208_Steelix/SteelixFemaleShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/479_Rotom/RotomShiny_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/550_Basculin/BasculinRedStripedShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/582_Vanillite/Vanillite_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/724_Decidueye/DecidueyePack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/504_Patrat/PatratShiny_north.png
@@ -4858,13 +4869,12 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/444_Gabite/GabiteMale_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/578_Duosion/DuosionPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/152_Chikorita/Chikorita_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/550_Basculin/BasculinRedStripedShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/658_Greninja/GreninjaPack_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/711_Gourgeist/GourgeistShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/583_Vanillish/VanillishShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/081_Magnemite/MagnemitePack_south.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/711_Gourgeist/GourgeistShiny_south.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/421_Cherrim/CherrimOvercast_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/792_Lunala/Lunala_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/421_Cherrim/CherrimOvercast_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/340_Whiscash/WhiscashPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/181_Ampharos/Ampharos_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/556_Maractus/MaractusShiny_north.png
@@ -5231,6 +5241,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/150_Mewtwo/MewtwoShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/386_Deoxys/DeoxysSpeed_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/533_Gurdurr/Gurdurr_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Psychic.png
 - Assets/Data/themoonitself.pokeworld/Textures/UI/Icon/Trainables/XP.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/039_Jigglypuff/JigglypuffShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/124_Jynx/JynxPack_east.dds
@@ -5391,11 +5402,12 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownM_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/461_Weavile/Weavile_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/478_Froslass/FroslassPack_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Rock.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/238_Smoochum/SmoochumShiny_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/609_Chandelure/ChandelureShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/644_Zekrom/ZekromShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/649_Genesect/GenesectPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/128_Tauros/TaurosShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/609_Chandelure/ChandelureShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/716_Xerneas/XerneasPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/280_Ralts/Ralts_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/642_Thundurus/ThundurusTherian_east.dds
@@ -6015,6 +6027,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/769_Sandygast/SandygastPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/654_Braixen/BraixenPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/004_Charmander/Charmander_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Typeless.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/790_Cosmoem/CosmoemShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/754_Lurantis/LurantisShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/009_Blastoise/BlastoiseShiny_south.png
@@ -6239,7 +6252,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/702_Dedenne/DedennePack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/784_KommoO/KommoO_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/806_Blacephalon/BlacephalonPack_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/425_Drifloon/DrifloonShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/870_Falinks/FalinksPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/528_Swoobat/SwoobatPack_east.png
@@ -6455,7 +6467,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/357_Tropius/TropiusShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/279_Pelipper/PelipperPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/403_Shinx/Shinx_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownB_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/294_Loudred/Loudred_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/074_Geodude/GeodudeShiny_east.dds
@@ -6565,6 +6576,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/719_Diancie/Diancie_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/109_Koffing/KoffingShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/550_Basculin/Basculin_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Fire.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/627_Rufflet/Rufflet_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/190_Aipom/Aipom_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/128_Tauros/TaurosShiny_south.png
@@ -7161,12 +7173,13 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/533_Gurdurr/GurdurrShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownU_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/599_Klink/Klink_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/592_Frillish/FrillishFemalePack_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Typeless.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/448_Lucario/LucarioShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/603_Eelektrik/EelektrikShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/286_Breloom/Breloom_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/574_Gothita/GothitaShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/652_Chesnaught/ChesnaughtShiny_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/592_Frillish/FrillishFemalePack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/733_Toucannon/ToucannonPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/363_Spheal/SphealPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/890_Eternatus/Eternatus_north.png
@@ -7423,6 +7436,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/761_Bounsweet/BounsweetShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/084_Doduo/DoduoShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/128_Tauros/TaurosShiny_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Grass.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/555_Darmanitan/DarmanitanPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/071_Victreebel/VictreebelPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/366_Clamperl/ClamperlPack_north.dds
@@ -7988,6 +8002,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/747_Mareanie/MareanieShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/053_Persian/Persian_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/671_Florges/FlorgesForm4_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Dark.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/284_Masquerain/MasquerainPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/671_Florges/FlorgesForm1_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/080_Slowbro/Slowbro_east.dds
@@ -8126,7 +8141,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/276_Taillow/TaillowShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/312_Minun/MinunShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/090_Shellder/ShellderShiny_north.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/821_Rookidee/RookideePack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/774_Minior/MiniorYellowShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/881_Arctozolt/ArctozoltShiny_south.png
@@ -8173,6 +8187,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/586_Sawsbuck/SawsbuckForm2Shiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/077_Ponyta/PonytaPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/058_Growlithe/GrowlithePack_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Dark.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/482_Azelf/AzelfPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/607_Litwick/LitwickPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/883_Arctovish/ArctovishShiny_south.dds
@@ -8416,11 +8431,10 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/412_Burmy/BurmyTrashShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/218_Slugma/SlugmaPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/387_Turtwig/TurtwigShiny_south.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/741_Oricorio/OricorioPau_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/821_Rookidee/RookideeShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/083_Farfetchd/FarfetchdShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/583_Vanillish/VanillishPack_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/821_Rookidee/RookideeShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/854_Sinistea/SinisteaShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/847_Barraskewda/BarraskewdaShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/702_Dedenne/DedenneShiny_south.png
@@ -8719,6 +8733,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/650_Chespin/ChespinPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/045_Vileplume/VileplumeShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/029_NidoranF/NidoranF_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/172_Pichu/PichuSpikyShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/774_Minior/MiniorRed_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/661_Fletchling/Fletchling_south.png
@@ -9258,6 +9273,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/210_Granbull/GranbullPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/001_Bulbasaur/Bulbasaur_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/814_Raboot/RabootShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Poison.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/504_Patrat/Patrat_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/524_Roggenrola/Roggenrola_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/073_Tentacruel/TentacruelShiny_east.png
@@ -9391,6 +9407,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/854_Sinistea/SinisteaPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/544_Whirlipede/WhirlipedePack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/855_Polteageist/Polteageist_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Electric.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/507_Herdier/HerdierPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/364_Sealeo/Sealeo_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/457_Lumineon/Lumineon_east.dds
@@ -9517,18 +9534,20 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/778_Mimikyu/MimikyuDisguised_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/270_Lotad/LotadPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/205_Forretress/Forretress_south.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/216_Teddiursa/TeddiursaPack_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/038_Ninetales/NinetalesShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/083_Farfetchd/Farfetchd_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/169_Crobat/CrobatShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/696_Tyrunt/TyruntShiny_north.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/413_Wormadam/WormadamSandy_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/216_Teddiursa/TeddiursaPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/011_Metapod/MetapodPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/198_Murkrow/MurkrowPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/479_Rotom/Rotom_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/413_Wormadam/WormadamSandy_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/833_Chewtle/Chewtle_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/839_Coalossal/CoalossalShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/157_Typhlosion/Typhlosion_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Steel.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/309_Electrike/Electrike_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/678_Meowstic/MeowsticMaleShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/778_Mimikyu/MimikyuBusted_east.png
@@ -9555,7 +9574,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/671_Florges/Florges_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/630_Mandibuzz/Mandibuzz_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/567_Archeops/ArcheopsPack_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/431_Glameow/Glameow_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/396_Starly/StarlyPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/525_Boldore/BoldoreShiny_north.dds
@@ -9615,12 +9633,13 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/510_Liepard/Liepard_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/422_Shellos/ShellosEastShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/716_Xerneas/XerneasPack_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Bug.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Fairy.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/414_Mothim/MothimShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/109_Koffing/Koffing_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/699_Aurorus/Aurorus_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/319_Sharpedo/SharpedoPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/037_Vulpix/Vulpix_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/678_Meowstic/MeowsticFemaleShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/032_NidoranM/NidoranM_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/830_Eldegoss/EldegossPack_south.dds
@@ -9656,6 +9675,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/399_Bidoof/Bidoof_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/837_Rolycoly/Rolycoly_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/863_Perrserker/Perrserker_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Water.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/092_Gastly/GastlyShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/618_Stunfisk/Stunfisk_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/413_Wormadam/WormadamSandyShiny_east.dds
@@ -9701,10 +9721,10 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/695_Heliolisk/HelioliskPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/774_Minior/MiniorBlue_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/050_Diglett/Desiccated_Diglett.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/493_Arceus/ArceusDragonShiny_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Bug.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/231_Phanpy/PhanpyShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/772_TypeNull/TypeNullPack_south.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/795_Pheromosa/PheromosaPack_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/493_Arceus/ArceusDragonShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/094_Gengar/Desiccated_Gengar.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/010_Caterpie/Caterpie_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/149_Dragonite/DragonitePack_east.png
@@ -9713,13 +9733,14 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/666_Vivillon/VivillonForm19_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/666_Vivillon/VivillonForm16Shiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/893_Zarude/ZarudePack_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/858_Hatterene/HatterenePack_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/795_Pheromosa/PheromosaPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownZ_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/044_Gloom/GloomShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/482_Azelf/Azelf_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/534_Conkeldurr/ConkeldurrShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/500_Emboar/EmboarShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/718_Zygarde/Zygarde_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/858_Hatterene/HatterenePack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/453_Croagunk/CroagunkShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/212_Scizor/ScizorPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Item/Evolution_Item/Upgrade/Upgrade.dds
@@ -9854,6 +9875,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/438_Bonsly/BonslyShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/068_Machamp/MachampShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/585_Deerling/DeerlingWinterShiny_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Dragon.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownExclamation_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/554_Darumaka/DarumakaForm1Shiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/656_Froakie/FroakieShiny_north.dds
@@ -9896,6 +9918,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/048_Venonat/Venonat_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/894_Regieleki/RegielekiPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/797_Celesteela/CelesteelaPack_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Rock.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/585_Deerling/DeerlingShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/457_Lumineon/Lumineon_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/043_Oddish/Oddish_east.png
@@ -10061,6 +10084,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/400_Bibarel/BibarelPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/423_Gastrodon/Gastrodon_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/589_Escavalier/EscavalierShiny_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Steel.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/278_Wingull/WingullPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/397_Staravia/StaraviaPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/458_Mantyke/MantykeShiny_south.png
@@ -10188,6 +10212,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/515_Panpour/Panpour_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/897_Spectrier/SpectrierPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/172_Pichu/Pichu_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Ghost.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/454_Toxicroak/ToxicroakShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/488_Cresselia/Cresselia_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/845_Cramorant/Cramorant_north.dds
@@ -10289,6 +10314,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/108_Lickitung/LickitungShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/357_Tropius/Tropius_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/133_Eevee/Eevee_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Grass.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/666_Vivillon/VivillonShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/787_TapuBulu/TapuBuluShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/106_Hitmonlee/HitmonleeShiny_east.png
@@ -10381,6 +10407,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/316_Gulpin/GulpinPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownGShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/535_Tympole/TympolePack_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/848_Toxel/ToxelPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/741_Oricorio/OricorioPauShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/056_Mankey/MankeyPack_north.png
@@ -10849,9 +10876,10 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/205_Forretress/ForretressShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/026_Raichu/Raichu_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/804_Naganadel/NaganadelShiny_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/669_Flabebe/FlabebeForm4Shiny_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Flying.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/362_Glalie/GlalieShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/211_Qwilfish/QwilfishShiny_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/669_Flabebe/FlabebeForm4Shiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/676_Furfrou/FurfrouForm8_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/049_Venomoth/VenomothPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/077_Ponyta/PonytaShiny_east.dds
@@ -11247,6 +11275,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/843_Silicobra/SilicobraPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/618_Stunfisk/StunfiskForm1Shiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/663_Talonflame/Talonflame_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/264_Linoone/LinoonePack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/479_Rotom/RotomFrost_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/315_Roselia/Roselia_east.dds
@@ -12027,8 +12056,8 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/632_Durant/DurantPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/204_Pineco/PinecoShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/396_Starly/StarlyShiny_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/714_Noibat/NoibatPack_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/849_Toxtricity/ToxtricityPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/666_Vivillon/VivillonForm6_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/398_Staraptor/Staraptor_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/174_Igglybuff/Igglybuff_east.png
@@ -12079,6 +12108,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/182_Bellossom/BellossomPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/352_Kecleon/KecleonShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/685_Slurpuff/SlurpuffShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Normal.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/630_Mandibuzz/MandibuzzShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/562_Yamask/YamaskForm1Shiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/803_Poipole/PoipolePack_east.png
@@ -12099,10 +12129,9 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/499_Pignite/Pignite_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/115_Kangaskhan/KangaskhanPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/563_Cofagrigus/Cofagrigus_south.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/849_Toxtricity/ToxtricityPack_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/874_Stonjourner/StonjournerShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/828_Thievul/ThievulPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/716_Xerneas/XerneasPack_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/874_Stonjourner/StonjournerShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/703_Carbink/Carbink_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/662_Fletchinder/FletchinderShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/727_Incineroar/Incineroar_south.png
@@ -12356,7 +12385,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/225_Delibird/DelibirdPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/423_Gastrodon/GastrodonEast_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/262_Mightyena/MightyenaPack_north.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/547_Whimsicott/WhimsicottShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/823_Corviknight/CorviknightPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/052_Meowth/MeowthPack_south.png
@@ -12371,6 +12399,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/873_Frosmoth/FrosmothShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/391_Monferno/MonfernoPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/124_Jynx/JynxPack_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Ghost.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/309_Electrike/ElectrikeShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/440_Happiny/HappinyShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/666_Vivillon/VivillonForm19Shiny_east.dds
@@ -12444,10 +12473,10 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/648_Meloetta/Meloetta_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/291_Ninjask/NinjaskPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/300_Skitty/SkittyPack_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/383_Groudon/GroudonShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/416_Vespiquen/VespiquenPack_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/774_Minior/MiniorIndigoShiny_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/383_Groudon/GroudonShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/423_Gastrodon/GastrodonEast_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/774_Minior/MiniorIndigoShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/627_Rufflet/RuffletPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/013_Weedle/Weedle_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/197_Umbreon/UmbreonPack_north.dds
@@ -12937,7 +12966,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/173_Cleffa/CleffaPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Building/FossilResurrector_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/620_Mienshao/MienshaoPack_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/291_Ninjask/Ninjask_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/596_Galvantula/GalvantulaPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/466_Electivire/Electivire_south.dds
@@ -13591,6 +13619,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/260_Swampert/SwampertShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/557_Dwebble/DwebbleShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/671_Florges/FlorgesForm4_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Ground.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/526_Gigalith/GigalithPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/668_Pyroar/PyroarFemaleShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Item/Utility/Belts/PokeBallBelt.png
@@ -13763,9 +13792,10 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/849_Toxtricity/ToxtricityPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/480_Uxie/Uxie_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/855_Polteageist/PolteageistPack_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/618_Stunfisk/StunfiskShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Flying.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/113_Chansey/ChanseyShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/299_Nosepass/Nosepass_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/618_Stunfisk/StunfiskShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/189_Jumpluff/Jumpluff_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/110_Weezing/WeezingShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/479_Rotom/RotomFan_north.dds
@@ -13835,8 +13865,9 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/493_Arceus/ArceusFairyShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/493_Arceus/ArceusRock_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/116_Horsea/HorseaPack_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/602_Tynamo/Tynamo_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/721_Volcanion/VolcanionShiny_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/602_Tynamo/Tynamo_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/113_Chansey/Chansey_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/864_Cursola/CursolaShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/190_Aipom/AipomPack_east.dds
@@ -14250,6 +14281,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/752_Araquanid/Araquanid_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/685_Slurpuff/Slurpuff_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/701_Hawlucha/HawluchaShiny_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Ice.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/577_Solosis/Solosis_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/658_Greninja/GreninjaForm1Shiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/669_Flabebe/FlabebeForm1Shiny_north.dds
@@ -14388,10 +14420,11 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/728_Popplio/PopplioShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/797_Celesteela/Celesteela_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/421_Cherrim/CherrimShiny_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/683_Aromatisse/Aromatisse_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/100_Voltorb/Voltorb_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/773_Silvally/SilvallyGround_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/683_Aromatisse/Aromatisse_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/791_Solgaleo/Solgaleo_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/773_Silvally/SilvallyGround_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/878_Cufant/Cufant_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/022_Fearow/FearowPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/797_Celesteela/CelesteelaShiny_south.dds
@@ -15664,7 +15697,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/305_Lairon/LaironPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/898_Calyrex/Calyrex_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/371_Bagon/BagonShiny_south.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/647_Keldeo/KeldeoPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/887_Dragapult/Dragapult_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/738_Vikavolt/Vikavolt_north.png
@@ -15967,11 +15999,11 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/554_Darumaka/DarumakaForm1_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/493_Arceus/ArceusRockShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/103_Exeggutor/ExeggutorAlolan_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/357_Tropius/Tropius_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/474_PorygonZ/PorygonZShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/344_Claydol/Claydol_south.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/532_Timburr/TimburrPack_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/357_Tropius/Tropius_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/561_Sigilyph/Sigilyph_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/474_PorygonZ/PorygonZShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/532_Timburr/TimburrPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/079_Slowpoke/SlowpokeShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/735_Gumshoos/GumshoosShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/765_Oranguru/OranguruShiny_east.png
@@ -16194,9 +16226,8 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/201_Unown/UnownVShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/210_Granbull/GranbullShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/316_Gulpin/Gulpin_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Pack_south.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/408_Cranidos/CranidosShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/418_Buizel/Buizel_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/408_Cranidos/CranidosShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/574_Gothita/Gothita_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/666_Vivillon/VivillonForm16Shiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/360_Wynaut/WynautShiny_south.dds
@@ -16398,6 +16429,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/133_Eevee/EeveeShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/757_Salandit/Salandit_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/555_Darmanitan/DarmanitanForm3Shiny_east.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/734_Yungoos/YungoosPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Item/Utility/Worn/UltraBall/UltraBall_Female.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/484_Palkia/PalkiaShiny_east.dds
@@ -16794,6 +16826,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/517_Munna/Munna_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/774_Minior/MiniorYellowShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/062_Poliwrath/Poliwrath_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/497_Serperior/Serperior_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/857_Hattrem/HattremPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/745_Lycanroc/LycanrocMidday_north.png
@@ -16880,8 +16913,8 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/325_Spoink/SpoinkShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/651_Quilladin/QuilladinShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/876_Indeedee/IndeedeeMale_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2__east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/397_Staravia/StaraviaPack_east.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/655_Delphox/Delphox_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/006_Charizard/Charizard_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/378_Regice/RegicePack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/168_Ariados/AriadosShiny_east.png
@@ -16894,7 +16927,6 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/325_Spoink/Spoink_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/418_Buizel/BuizelPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/642_Thundurus/ThundurusShiny_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/655_Delphox/Delphox_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/692_Clauncher/ClauncherShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/666_Vivillon/VivillonForm11Shiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/412_Burmy/BurmyPack_north.png
@@ -17095,6 +17127,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/796_Xurkitree/XurkitreePack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/806_Blacephalon/Blacephalon_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/873_Frosmoth/Frosmoth_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Normal.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/280_Ralts/RaltsPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/773_Silvally/SilvallyFlying_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/478_Froslass/FroslassShiny_south.png
@@ -17274,6 +17307,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/542_Leavanny/LeavannyPack_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/449_Hippopotas/HippopotasFemalePack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/559_Scraggy/ScraggyShiny_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Electric.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/773_Silvally/SilvallyGhost_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/800_Necrozma/NecrozmaNormal_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/123_Scyther/Desiccated_Scyther.png
@@ -18291,6 +18325,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/476_Probopass/ProbopassPack_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/574_Gothita/GothitaPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/696_Tyrunt/TyruntShiny_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Ground.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/888_Zacian/ZacianForm1_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/053_Persian/Persian_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/290_Nincada/NincadaPack_east.png
@@ -18428,6 +18463,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/452_Drapion/DrapionPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/719_Diancie/Diancie_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/603_Eelektrik/Eelektrik_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Fighting.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/723_Dartrix/Dartrix_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/850_Sizzlipede/SizzlipedePack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/673_Gogoat/GogoatPack_north.dds
@@ -18441,11 +18477,12 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/193_Yanma/Yanma_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/239_Elekid/ElekidPack_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/487_Giratina/Giratina_north.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/766_Passimian/Passimian_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/PokemonDessicated/PokemonDessicated.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/371_Bagon/Bagon_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/639_Terrakion/TerrakionPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/420_Cherubi/CherubiPack_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/766_Passimian/Passimian_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/786_TapuLele/TapuLelePack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/396_Starly/Desiccated_Starly.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/839_Coalossal/CoalossalPack_south.dds
@@ -18479,9 +18516,10 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/293_Whismur/WhismurShiny_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/083_Farfetchd/FarfetchdPack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/534_Conkeldurr/ConkeldurrShiny_north.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Water.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/673_Gogoat/GogoatPack_east.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/708_Phantump/PhantumpShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/340_Whiscash/Whiscash_south.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/708_Phantump/PhantumpShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/778_Mimikyu/MimikyuBustedShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/797_Celesteela/CelesteelaPack_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/114_Tangela/TangelaPack_east.png
@@ -18594,18 +18632,17 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/095_Onix/OnixShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/870_Falinks/Falinks_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/173_Cleffa/Cleffa_north.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/233_Porygon2_/Porygon2_Shiny_south.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/832_Dubwool/DubwoolShiny_north.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/379_Registeel/RegisteelShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/832_Dubwool/DubwoolShiny_north.png
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/651_Quilladin/Quilladin_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/684_Swirlix/SwirlixShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/640_Virizion/VirizionShiny_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/606_Beheeyem/BeheeyemShiny_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/741_Oricorio/OricorioPomPom_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/760_Bewear/BewearPack_east.png
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_6/651_Quilladin/Quilladin_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/829_Gossifleur/Gossifleur_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/838_Carkol/Carkol_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_7/773_Silvally/SilvallyFairy_south.dds
-- Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/829_Gossifleur/Gossifleur_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/603_Eelektrik/Eelektrik_east.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_2/163_Hoothoot/Hoothoot_south.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/029_NidoranF/NidoranFShiny_east.dds
@@ -18689,6 +18726,7 @@ Assets:
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_1/148_Dragonair/DragonairPack_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_5/523_Zebstrika/ZebstrikaShiny_south.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/360_Wynaut/Wynaut_south.dds
+- Assets/Data/themoonitself.pokeworld/Textures/Things/Item/TMs/TM_Poison.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_8/886_Drakloak/DrakloakShiny_east.png
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_3/354_Banette/BanettePack_north.dds
 - Assets/Data/themoonitself.pokeworld/Textures/Things/Pawn/Pokemon/Gen_4/421_Cherrim/CherrimPack_east.dds

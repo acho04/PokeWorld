@@ -72,4 +72,10 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
 
+  <JobDef>
+    <defName>PW_UseTMOnPokemon</defName>
+    <driverClass>PokeWorld.JobDriver_UseTMOnPokemon</driverClass>
+    <reportString>teaching TargetA to TargetB</reportString>
+  </JobDef>
+
 </Defs>

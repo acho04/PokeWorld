@@ -69,10 +69,16 @@ public static class MoveCardUtility
 
         DrawHeader(listing_Standard.GetRect(28f));
         listing_Standard.GapLine(10);
-        foreach (var kvp in pawn.TryGetComp<CompPokemon>().moveTracker.unlockableMoves)
+        var moveTracker = pawn.TryGetComp<CompPokemon>().moveTracker;
+        foreach (var kvp in moveTracker.unlockableMoves)
         {
             if (kvp.Key == DefDatabase<MoveDef>.GetNamed("Struggle")) continue;
             DrawMoveRow(listing_Standard.GetRect(28f), pawn, kvp);
+        }
+        foreach (var move in moveTracker.tutoredMoves)
+        {
+            if (move == DefDatabase<MoveDef>.GetNamed("Struggle")) continue;
+            DrawMoveRow(listing_Standard.GetRect(28f), pawn, move);
         }
 
         //listing_Standard.EndScrollView(ref viewRect);
@@ -83,9 +89,9 @@ public static class MoveCardUtility
     {
         if (p == null || p.TryGetComp<CompPokemon>() == null) return 0f;
         var num = 1;
-        foreach (var kvp in p.TryGetComp<CompPokemon>().moveTracker.unlockableMoves)
+        foreach (var move in p.TryGetComp<CompPokemon>().moveTracker.visibleMoves)
         {
-            if (kvp.Key == DefDatabase<MoveDef>.GetNamed("Struggle")) continue;
+            if (move == DefDatabase<MoveDef>.GetNamed("Struggle")) continue;
             num++;
         }
 
@@ -134,6 +140,43 @@ public static class MoveCardUtility
         DoPokemonMoveTooltip(rect, pawn, kvp);
         GUI.color = Color.white;
     }
+    private static void DrawMoveRow(Rect rect, Pawn pawn, MoveDef move)
+    {
+        //AcceptanceReport canTrain = pawn.training.CanAssignToTrain(md, out visible);
+        Widgets.DrawHighlightIfMouseover(rect);
+        Text.Anchor = TextAnchor.MiddleLeft;
+        var rect2 = rect;
+        rect2.xMax = rect2.xMin + 100;
+        Widgets.Label(rect2, move.LabelCap);
+        var rect3 = new Rect(rect2.xMax + 17f, rect2.yMin + (rect2.yMax - rect2.yMin - 14) / 2, 32, 14);
+        Widgets.DrawTextureFitted(rect3, move.type.uiIcon, 1);
+        var rect4 = rect;
+        rect4.xMin = rect3.xMax + 17f;
+        rect4.xMax = rect4.xMin + 40f;
+        var rect5 = rect;
+        rect5.xMin = rect4.xMax + 17f;
+        rect5.xMax = rect5.xMin + 50f;
+        if (move.tool != null)
+        {
+            Widgets.Label(rect4, move.tool.power.ToString());
+            Widgets.Label(rect5, "PW_Melee".Translate());
+        }
+        else
+        {
+            Widgets.Label(rect4, move.verb.defaultProjectile.projectile.GetDamageAmount(1, null).ToString());
+            Widgets.Label(rect5, move.verb.range.ToString());
+        }
+
+        var rect6 = rect;
+        rect6.xMin = rect5.xMax + 17f;
+        rect6.xMax = rect6.xMin + 50f;
+        DoPokemonMoveCheckbox(rect6, pawn, move);
+        Text.Anchor = TextAnchor.UpperLeft;
+
+        GUI.color = Color.green;
+        DoPokemonMoveTooltip(rect, pawn, move);
+        GUI.color = Color.white;
+    }
 
     private static void DrawHeader(Rect rect)
     {
@@ -170,6 +213,15 @@ public static class MoveCardUtility
         Widgets.Checkbox(rect.position, ref checkOn, rect.width / 2, false, true, texChecked, texUnchecked);
         if (checkOn != flag) pawn.TryGetComp<CompPokemon>().moveTracker.SetWanted(kvp.Key, checkOn);
     }
+    public static void DoPokemonMoveCheckbox(Rect rect, Pawn pawn, MoveDef move)
+    {
+        var checkOn = pawn.TryGetComp<CompPokemon>().moveTracker.GetWanted(move);
+        var flag = checkOn;
+        var texChecked = LearnedTrainingTex;
+        var texUnchecked = LearnedNotTrainingTex;
+        Widgets.Checkbox(rect.position, ref checkOn, rect.width / 2, false, true, texChecked, texUnchecked);
+        if (checkOn != flag) pawn.TryGetComp<CompPokemon>().moveTracker.SetWanted(move, checkOn);
+    }
 
     private static void DoPokemonMoveTooltip(Rect rect, Pawn pawn, KeyValuePair<MoveDef, int> kvp)
     {
@@ -187,6 +239,23 @@ public static class MoveCardUtility
                     );
                 if (!pawn.TryGetComp<CompPokemon>().moveTracker.HasUnlocked(md))
                     text += "\n\n" + "PW_MoveUnlockAt".Translate(kvp.Value);
+                return text;
+            }, (int)(rect.y * 612f + rect.x)
+        );
+    }
+    private static void DoPokemonMoveTooltip(Rect rect, Pawn pawn, MoveDef move)
+    {
+        if (!Mouse.IsOver(rect)) return;
+        TooltipHandler.TipRegion(
+            rect, delegate
+            {
+                string text = move.LabelCap + "\n\n" + move.type.LabelCap + "\n\n" + move.description;
+                if (move.tool != null)
+                    text += "\n\n" + "PW_PowerMeleeMove".Translate(move.tool.power);
+                else if (move.verb != null)
+                    text += "\n\n" + "PW_PowerRangedMove".Translate(
+                        move.verb.defaultProjectile.projectile.GetDamageAmount(1, null), move.verb.range
+                    );
                 return text;
             }, (int)(rect.y * 612f + rect.x)
         );

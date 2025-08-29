@@ -9,6 +9,7 @@ public class MoveDef : Def
     public Tool tool;
     public TypeDef type;
     public VerbProperties verb;
+    public bool tm_move = false;
 
     public bool IsStab(Pawn pawn)
     {

@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using System.Linq;
-using RimWorld;
 using Verse;
+using static UnityEngine.Scripting.GarbageCollector;
 
 namespace PokeWorld;
 
@@ -22,8 +23,8 @@ public static class PokemonAttackGizmoUtility
     public static bool CanUseAnyMeleeVerb(Pawn pawn)
     {
         var comp = pawn.TryGetComp<CompPokemon>();
-        foreach (var kvp in comp.moveTracker.unlockableMoves)
-            if (kvp.Key.tool != null && ShouldUseMove(pawn, kvp.Key))
+        foreach (var move in comp.moveTracker.knownMoves)
+            if (move.tool != null && ShouldUseMove(pawn, move))
                 return true;
         return false;
     }
@@ -31,8 +32,8 @@ public static class PokemonAttackGizmoUtility
     public static bool CanUseAnyRangedVerb(Pawn pawn)
     {
         var comp = pawn.TryGetComp<CompPokemon>();
-        foreach (var kvp in comp.moveTracker.unlockableMoves)
-            if (kvp.Key.verb != null && ShouldUseMove(pawn, kvp.Key))
+        foreach (var kvp in comp.moveTracker.knownMoves)
+            if (kvp.verb != null && ShouldUseMove(pawn, kvp))
                 return true;
         return false;
     }
@@ -238,7 +239,7 @@ public static class PokemonAttackGizmoUtility
     {
         return GetVerbFromMove(
             pokemon,
-            pokemon.TryGetComp<CompPokemon>().moveTracker.unlockableMoves.Keys
+            pokemon.TryGetComp<CompPokemon>().moveTracker.knownMoves
                 .Where(x => x.verb != null && ShouldUseMove(pokemon, x)).MaxBy(x => x.verb.range)
         );
     }
@@ -247,7 +248,7 @@ public static class PokemonAttackGizmoUtility
     {
         return GetVerbFromMove(
             pokemon,
-            pokemon.TryGetComp<CompPokemon>().moveTracker.unlockableMoves.Keys
+            pokemon.TryGetComp<CompPokemon>().moveTracker.knownMoves
                 .Where(x => x.verb != null && ShouldUseMove(pokemon, x)).RandomElement()
         );
     }
@@ -255,11 +256,11 @@ public static class PokemonAttackGizmoUtility
     public static bool ShouldUseMove(Pawn pokemon, MoveDef md)
     {
         if (md == DefDatabase<MoveDef>.GetNamed("Struggle"))
-            foreach (var kvp in pokemon.TryGetComp<CompPokemon>().moveTracker.unlockableMoves)
+            foreach (var move in pokemon.TryGetComp<CompPokemon>().moveTracker.knownMoves)
             {
-                if (kvp.Key == DefDatabase<MoveDef>.GetNamed("Struggle")) continue;
-                if (kvp.Key.tool != null && pokemon.TryGetComp<CompPokemon>().moveTracker.HasUnlocked(kvp.Key) &&
-                    pokemon.TryGetComp<CompPokemon>().moveTracker.GetWanted(kvp.Key)) return false;
+                if (move == DefDatabase<MoveDef>.GetNamed("Struggle")) continue;
+                if (move.tool != null && pokemon.TryGetComp<CompPokemon>().moveTracker.HasUnlocked(move) &&
+                    pokemon.TryGetComp<CompPokemon>().moveTracker.GetWanted(move)) return false;
             }
 
         if (pokemon.TryGetComp<CompPokemon>().moveTracker.HasUnlocked(md) &&

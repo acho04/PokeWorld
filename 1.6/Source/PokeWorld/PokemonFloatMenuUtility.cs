@@ -77,20 +77,20 @@ public static class PokemonFloatMenuUtility
         {
             failStr = "CannotAttackSelf".Translate();
         }
-        else if (pawn.playerSettings.Master == null || pawn.playerSettings.Master.Map != pawn.Map)
+        else if (!pawn.Drafted && (pawn.playerSettings.Master == null || pawn.playerSettings.Master.Map != pawn.Map))
         {
             failStr = "PW_WarningNoMaster".Translate();
         }
-        else if (pawn.playerSettings.Master.Drafted == false)
+        else if (!pawn.Drafted && pawn.playerSettings.Master.Drafted == false)
         {
             failStr = "PW_WarningMasterNotDrafted".Translate();
         }
-        else if (pawn.Position.DistanceTo(pawn.playerSettings.Master.Position) >
+        else if (!pawn.Drafted && pawn.Position.DistanceTo(pawn.playerSettings.Master.Position) >
                  PokemonMasterUtility.GetMasterObedienceRadius(pawn))
         {
             failStr = "PW_WarningMasterTooFar".Translate();
         }
-        else if (target != null && target.Cell.DistanceTo(pawn.playerSettings.Master.Position) >
+        else if (!pawn.Drafted && target != null && target.Cell.DistanceTo(pawn.playerSettings.Master.Position) >
                  PokemonMasterUtility.GetMasterObedienceRadius(pawn))
         {
             failStr = "PW_WarningTargetTooFarFromMaster".Translate();

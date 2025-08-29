@@ -11,6 +11,7 @@
       <li>Ghost</li>
     </immunities>
     <uiIconPath>UI/Types/Normal</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Normal</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Normal_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -28,6 +29,7 @@
       <li>Fairy</li>
     </weaknesses>
     <uiIconPath>UI/Types/Fighting</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Fighting</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Fighting_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -48,6 +50,7 @@
       <li>Ground</li>
     </immunities>
     <uiIconPath>UI/Types/Flying</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Flying</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Flying_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -66,6 +69,7 @@
       <li>Psychic</li>
     </weaknesses>
     <uiIconPath>UI/Types/Poison</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Poison</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Poison_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -85,6 +89,7 @@
       <li>Electric</li>
     </immunities>
     <uiIconPath>UI/Types/Ground</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Ground</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Ground_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -105,6 +110,7 @@
       <li>Grass</li>
     </weaknesses>
     <uiIconPath>UI/Types/Rock</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Rock</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Rock_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -122,6 +128,7 @@
       <li>Fire</li>
     </weaknesses>
     <uiIconPath>UI/Types/Bug</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Bug</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Bug_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -140,6 +147,7 @@
       <li>Fighting</li>
     </immunities>
     <uiIconPath>UI/Types/Ghost</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Ghost</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Ghost_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -167,6 +175,7 @@
       <li>Poison</li>
     </immunities>
     <uiIconPath>UI/Types/Steel</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Steel</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Steel_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -187,6 +196,7 @@
       <li>Water</li>
     </weaknesses>
     <uiIconPath>UI/Types/Fire</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Fire</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Fire_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -204,6 +214,7 @@
       <li>Electric</li>
     </weaknesses>
     <uiIconPath>UI/Types/Water</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Water</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Water_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -224,6 +235,7 @@
       <li>Ice</li>
     </weaknesses>
     <uiIconPath>UI/Types/Grass</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Grass</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Grass_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -239,6 +251,7 @@
       <li>Ground</li>
     </weaknesses>
     <uiIconPath>UI/Types/Electric</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Electric</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Electric_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -255,6 +268,7 @@
       <li>Dark</li>
     </weaknesses>
     <uiIconPath>UI/Types/Psychic</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Psychic</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Psychic_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -271,6 +285,7 @@
       <li>Dark</li>
     </weaknesses>
     <uiIconPath>UI/Types/Ice</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Ice</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Ice_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -289,6 +304,7 @@
       <li>Fairy</li>
     </weaknesses>
     <uiIconPath>UI/Types/Dragon</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Dragon</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Dragon_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -308,6 +324,7 @@
       <li>Psychic</li>
     </immunities>
     <uiIconPath>UI/Types/Dark</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Dark</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Dark_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 
@@ -327,6 +344,7 @@
       <li>Dragon</li>
     </immunities>
     <uiIconPath>UI/Types/Fairy</uiIconPath>
+    <tmTexturePath>Things/Item/TMs/TM_Fairy</tmTexturePath>
     <gizmoIconPath>UI/Gizmos/Types/Fairy_icon</gizmoIconPath>
   </PokeWorld.TypeDef>
 

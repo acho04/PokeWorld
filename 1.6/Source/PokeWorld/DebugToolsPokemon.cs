@@ -1,6 +1,7 @@
-﻿using System.Linq;
-using LudeonTK;
+﻿using LudeonTK;
 using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace PokeWorld;
@@ -164,6 +165,22 @@ public static class DebugToolsPokemon
                     Log.Message(text);
                 }
             }
+    }
+
+    [DebugAction("PokéWorld", "Create TM", allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    private static List<DebugActionNode> MakeTM()
+    {
+        List<DebugActionNode> list = [];
+        foreach (var def in DefDatabase<MoveDef>.AllDefs)
+        {
+            list.Add(new DebugActionNode($"{def.LabelCap}", DebugActionType.ToolMap, delegate
+            {
+                var TM = (Technical_Machine)ThingMaker.MakeThing(DefDatabase<TMDef>.GetNamed("PW_TechnicalMachine"));
+                TM.SetMove(def);
+                GenSpawn.Spawn(TM, UI.MouseCell(), Find.CurrentMap);
+            }));
+        }
+        return list;
     }
 
     [DebugAction("PokéWorld", "Make colony (Gen 1)", allowedGameStates = AllowedGameStates.PlayingOnMap)]

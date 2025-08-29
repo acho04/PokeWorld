@@ -15,14 +15,14 @@ internal class VerbTracker_InitVerbs_Patch
         if (!(__instance.directOwner is Pawn pawn)) return;
         var comp = pawn.TryGetComp<CompPokemon>();
         if (comp == null) return;
-        foreach (var kvp in comp.moveTracker.unlockableMoves)
+        foreach (var move in comp.moveTracker.knownMoves)
         {
-            var verbProperties = kvp.Key.verb;
+            var verbProperties = move.verb;
             if (verbProperties != null)
                 try
                 {
                     var text = Verb.CalculateUniqueLoadID(
-                        pawn, comp.moveTracker.unlockableMoves.Keys.ToList().IndexOf(kvp.Key)
+                        pawn, comp.moveTracker.knownMoves.IndexOf(move)
                     );
 
                     var methodInitVerb = __instance.GetType().GetMethod(
@@ -38,7 +38,7 @@ internal class VerbTracker_InitVerbs_Patch
                     Log.Error("Could not instantiate Verb (directOwner=" + pawn.ToStringSafe() + "): " + ex);
                 }
 
-            var tool = kvp.Key.tool;
+            var tool = move.tool;
             if (tool != null)
             {
                 var maneuver = tool.Maneuvers.First();
@@ -46,7 +46,7 @@ internal class VerbTracker_InitVerbs_Patch
                 {
                     var verb = maneuver.verb;
                     var text2 = Verb.CalculateUniqueLoadID(
-                        pawn, comp.moveTracker.unlockableMoves.Keys.ToList().IndexOf(kvp.Key)
+                        pawn, comp.moveTracker.knownMoves.IndexOf(move)
                     );
 
                     var methodInitVerb = __instance.GetType().GetMethod(

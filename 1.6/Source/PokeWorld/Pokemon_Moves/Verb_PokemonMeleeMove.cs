@@ -12,8 +12,8 @@ public class Verb_PokemonMeleeMove : Verb_MeleeAttack
         var comp = ((Pawn)caster).TryGetComp<CompPokemon>();
         if (comp != null)
         {
-            var moveDef = comp.moveTracker.unlockableMoves.Keys.Where(x => x.tool == tool).First();
-            return PokemonAttackGizmoUtility.ShouldUseMove((Pawn)caster, moveDef);
+            var moveDef = comp.moveTracker.knownMoves.Where(x => x.tool == tool).FirstOrDefault();
+            return moveDef == null ? false : PokemonAttackGizmoUtility.ShouldUseMove((Pawn)caster, moveDef);
         }
 
         return false;
@@ -98,7 +98,7 @@ public class Verb_PokemonMeleeMove : Verb_MeleeAttack
                 var comp = caster.TryGetComp<CompPokemon>();
                 if (comp != null)
                     comp.moveTracker.lastUsedMove =
-                        comp.moveTracker.unlockableMoves.Keys.Where(x => x.tool == tool).First();
+                        comp.moveTracker.knownMoves.Where(x => x.tool == tool).First();
                 result = target.Thing.TakeDamage(item);
                 continue;
             }

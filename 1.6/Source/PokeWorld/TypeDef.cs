@@ -21,6 +21,7 @@ public class TypeDef : Def
 
     [NoTranslate]
     public string uiIconPath;
+    public string tmTexturePath;
 
     public List<TypeDef> weaknesses;
 

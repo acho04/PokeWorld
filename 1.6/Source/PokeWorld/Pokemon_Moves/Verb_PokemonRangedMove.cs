@@ -25,8 +25,8 @@ public class Verb_PokemonRangedMove : Verb_LaunchProjectile
         var comp = ((Pawn)caster).TryGetComp<CompPokemon>();
         if (comp != null)
         {
-            var moveDef = comp.moveTracker.unlockableMoves.Keys.Where(x => x.verb == verbProps).First();
-            return PokemonAttackGizmoUtility.ShouldUseMove((Pawn)caster, moveDef);
+            var moveDef = comp.moveTracker.knownMoves.Where(x => x.verb == verbProps).FirstOrDefault();
+            return moveDef == null ? false : PokemonAttackGizmoUtility.ShouldUseMove((Pawn)caster, moveDef);
         }
 
         return false;
@@ -37,7 +37,7 @@ public class Verb_PokemonRangedMove : Verb_LaunchProjectile
         var comp = caster.TryGetComp<CompPokemon>();
         if (comp != null)
             comp.moveTracker.lastUsedMove =
-                comp.moveTracker.unlockableMoves.Keys.Where(x => x.verb == verbProps).First();
+                comp.moveTracker.knownMoves.Where(x => x.verb == verbProps).First();
         base.WarmupComplete();
         Find.BattleLog.Add(
             new BattleLogEntry_RangedFire(
