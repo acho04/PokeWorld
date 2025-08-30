@@ -42,6 +42,11 @@ public class MoveTracker : IExposable
                 tutoredMoves.Add(move.moveDef);
             wantedMoves.Add(move.moveDef, true);
         }
+        if (!learnableMoves.Keys.Contains(DefDatabase<MoveDef>.GetNamed("Struggle")))
+        {
+            learnableMoves.Add(DefDatabase<MoveDef>.GetNamed("Struggle"), MoveLearnMethod.AlwaysKnown);
+            tutoredMoves.Add(DefDatabase<MoveDef>.GetNamed("Struggle"));
+        }
 
         OrderMoves();
     }

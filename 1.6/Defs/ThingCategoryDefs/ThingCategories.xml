@@ -50,6 +50,13 @@
 		<parent>PW_Item</parent>
 		<iconPath>Things/Item/Healing/Potion</iconPath>
 	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>PW_TM</defName>
+		<label>technical machines</label>
+		<parent>PW_Item</parent>
+		<iconPath>Things/Item/TMs/TM_Normal</iconPath>
+	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>PW_EvolutionItem</defName>

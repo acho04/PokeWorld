@@ -16,6 +16,7 @@ namespace PokeWorld
         public MoveDef move;
         private Graphic new_graphic;
         public override string LabelNoCount => move != null ? base.LabelNoCount + ": " + move.label : base.LabelNoCount;
+        public override string DescriptionDetailed => move != null ? base.DescriptionDetailed + " This one teaches the move " + move.label + "." : base.DescriptionDetailed;
         public override Graphic Graphic => move != null ? new_graphic ?? GenerateGraphicFromMove() : base.Graphic;
 
         public override void PostMake()

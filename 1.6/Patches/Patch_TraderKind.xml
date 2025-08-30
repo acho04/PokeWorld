@@ -101,6 +101,14 @@
         <thingDef>PW_HealPowder</thingDef>
         <countRange>1~3</countRange>
       </li>
+      
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
 
       <!-- Stones -->
       <li Class="StockGenerator_Category">
@@ -347,6 +355,14 @@
         <countRange>10~20</countRange>
       </li>
 
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+
       <!-- Stones -->
       <li Class="StockGenerator_Category">
         <categoryDef>PW_EvolutionStone</categoryDef>
@@ -410,6 +426,14 @@
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>10~20</countRange>
       </li>
+      
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
 
       <!-- Stones -->
       <!-- none -->
@@ -453,6 +477,14 @@
         <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>10~20</countRange>
+      </li>
+      
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
       </li>
 
       <!-- Stones -->
@@ -516,6 +548,14 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>PW_HealPowder</thingDef>
         <countRange>1~3</countRange>
+      </li>
+      
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
       </li>
 
       <!-- Stones -->
@@ -592,6 +632,14 @@
         <thingDefCountRange>-1~2</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
+      
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
 
       <!-- Fossils -->
       <!-- none -->
@@ -648,6 +696,14 @@
         <thingDefCountRange>2~3</thingDefCountRange>
         <countRange>15~30</countRange>
       </li>
+      
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
 
       <!-- Stones -->
       <!-- none -->
@@ -691,6 +747,14 @@
         <maxTechLevelGenerate>Ultra</maxTechLevelGenerate>
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>15~30</countRange>
+      </li>
+      
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
       </li>
 
       <!-- Stones -->
@@ -758,6 +822,14 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>PW_HealPowder</thingDef>
         <countRange>2~5</countRange>
+      </li>
+      
+      <!-- Technical Machines -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>PW_TM</categoryDef>
+        <maxTechLevelGenerate>Industrial</maxTechLevelGenerate>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
       </li>
 
       <!-- Stones -->
