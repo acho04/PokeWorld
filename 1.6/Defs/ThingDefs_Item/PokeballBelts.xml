@@ -32,7 +32,7 @@
     </graphicData>
     <projectile>
       <speed>10</speed>
-      <explosionRadius>1.5</explosionRadius>
+      <explosionRadius>2.4</explosionRadius>
     </projectile>
   </ThingDef>
 
@@ -44,7 +44,7 @@
     </graphicData>
     <projectile>
       <speed>12</speed>
-      <explosionRadius>1.9</explosionRadius>
+      <explosionRadius>2.4</explosionRadius>
     </projectile>
   </ThingDef>
 
@@ -84,7 +84,86 @@
     </projectile>
   </ThingDef>
 
-  <!-- ========================= -->
+  <!-- Pokeballs -->
+
+  <ThingDef ParentName="ResourceBase" Name="PW_MakeableApricornBall">
+    <defName>PW_MakeableApricornBall</defName>  
+    <label>Apricorn Ball</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A Ball made of Apricorn used by ancient civilisation before the invention of modern Poké Balls. Used in refilling Apricorn Belts.</description>
+    <graphicData>
+      <texPath>Things/Item/Utility/Balls/ApricornBall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>5</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>2.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase" Name="PW_MakeablePokeBall">
+    <defName>PW_MakeablePokeBall</defName>  
+    <label>Poké Ball</label>
+    <techLevel>Industrial</techLevel>
+    <description>A regular Poké Ball. Great for catching wild Pokémon, not so great to fight off raiders.</description>
+    <graphicData>
+      <texPath>Things/Item/Utility/Balls/PokeBall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>8</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase" Name="PW_MakeableGreatBall">
+    <defName>PW_MakeableGreatBall</defName>  
+    <label>Great Ball</label>
+    <techLevel>Industrial</techLevel>
+    <description>A Ball that gives a better chance of catching wild Pokémon compared to a standard Poké Ball.</description>
+    <graphicData>
+      <texPath>Things/Item/Utility/Balls/GreatBall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>13</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase" Name="PW_MakeableUltraBall">
+    <defName>PW_MakeableUltraBall</defName>  
+    <label>Ultra Ball</label>
+    <techLevel>Industrial</techLevel>
+    <description>A high-tech Ball that provides a higher success rate for catching Pokémon than a Great Ball.</description>
+    <graphicData>
+      <texPath>Things/Item/Utility/Balls/UltraBall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.3</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <MarketValue>38</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+
+<!-- Pokeball Belts-->
 
   <ThingDef ParentName="ApparelNoQualityBase" Name="PW_PokeballBeltBase" Abstract="True">
     <thingCategories>
@@ -158,7 +237,6 @@
           <scale>(0.2,0.2)</scale>
         </fat>
       </wornGraphicData>
-      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <tags Inherit="false">
         <li>PW_BallBelt</li>
       </tags>
@@ -182,12 +260,8 @@
       <soundWorking>Recipe_Smith</soundWorking>
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
     </recipeMaker>
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
   </ThingDef>
+
 
   <ThingDef ParentName="PW_MakeablePokeballBeltBase">
     <defName>PW_ApricornBallBelt</defName>
@@ -250,7 +324,10 @@
     <comps>
       <li Class="CompProperties_ApparelReloadable">
         <maxCharges>20</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
+        <ammoDef>PW_MakeableApricornBall</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
         <hotKey>Misc4</hotKey>
         <chargeNoun>charge</chargeNoun>
         <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -259,6 +336,7 @@
         <ballDef>PW_CryptosleepApricornBall</ballDef>
       </li>
     </comps>
+
   </ThingDef>
 
   <ThingDef ParentName="PW_MakeablePokeballBeltBase">
@@ -323,7 +401,10 @@
     <comps>
       <li Class="CompProperties_ApparelReloadable">
         <maxCharges>20</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
+        <ammoDef>PW_MakeablePokeBall</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
         <hotKey>Misc4</hotKey>
         <chargeNoun>charge</chargeNoun>
         <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -396,7 +477,10 @@
     <comps>
       <li Class="CompProperties_ApparelReloadable">
         <maxCharges>20</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
+        <ammoDef>PW_MakeableGreatBall</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
         <hotKey>Misc4</hotKey>
         <chargeNoun>charge</chargeNoun>
         <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -469,7 +553,10 @@
     <comps>
       <li Class="CompProperties_ApparelReloadable">
         <maxCharges>20</maxCharges>
-        <destroyOnEmpty>true</destroyOnEmpty>
+        <ammoDef>PW_MakeableUltraBall</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
         <hotKey>Misc4</hotKey>
         <chargeNoun>charge</chargeNoun>
         <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>

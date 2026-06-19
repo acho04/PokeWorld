@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RecipeDef>
+    <defName>PW_MakeApricornBall</defName>
+    <label>make Apricorn Balls x20</label>
+    <description>Make Apricorn Balls to reload belts with.</description>
+    <jobString>Making Apricorn Balls.</jobString>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_MakeBow</soundWorking>
+    <workAmount>1800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>PW_ApricornBallResearch</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>45</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <PW_MakeableApricornBall>20</PW_MakeableApricornBall>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>PW_MakePokeBall</defName>
+    <label>make Poké Balls x20</label>
+    <description>Make Poké Balls to reload belts with.</description>
+    <jobString>Making Poké Balls.</jobString>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workAmount>3200</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <researchPrerequisite>PW_PokeBallResearch</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>ComponentIndustrial</li>
+                </thingDefs>
+            </filter>
+            <count>2</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Steel</li>
+                </thingDefs>
+            </filter>
+            <count>50</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>ComponentIndustrial</li>
+            <li>Steel</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <PW_MakeablePokeBall>20</PW_MakeablePokeBall>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>PW_MakeGreatBall</defName>
+    <label>make Great Balls x20</label>
+    <description>Make Great Balls to reload belts with.</description>
+    <jobString>Making Great Balls.</jobString>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workAmount>10000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <researchPrerequisite>PW_GreatBallResearch</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>ComponentIndustrial</li>
+                </thingDefs>
+            </filter>
+            <count>4</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Steel</li>
+                </thingDefs>
+            </filter>
+            <count>70</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>ComponentIndustrial</li>
+            <li>Steel</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <PW_MakeableGreatBall>20</PW_MakeableGreatBall>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>PW_MakeUltraBall</defName>
+    <label>make Ultra Balls x20</label>
+    <description>Make Ultra Balls to reload belts with.</description>
+    <jobString>Making Ultra Balls.</jobString>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workAmount>20000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisite>PW_UltraBallResearch</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    <ingredients>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>ComponentSpacer</li>
+                </thingDefs>
+            </filter>
+            <count>2</count>
+        </li>
+        <li>
+            <filter>
+                <thingDefs>
+                    <li>Plasteel</li>
+                </thingDefs>
+            </filter>
+            <count>40</count>
+        </li>
+    </ingredients>
+    <fixedIngredientFilter>
+        <thingDefs>
+            <li>ComponentSpacer</li>
+            <li>Plasteel</li>
+        </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <PW_MakeableUltraBall>20</PW_MakeableUltraBall>
+    </products>
+  </RecipeDef>
+
+
+</Defs>

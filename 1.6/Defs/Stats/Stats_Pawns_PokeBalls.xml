@@ -86,17 +86,6 @@
     <toStringStyle>FloatMaxOne</toStringStyle>
     <showIfUndefined>false</showIfUndefined>
     <displayPriorityInCategory>2400</displayPriorityInCategory>
-    <parts>
-      <li Class="StatPart_Quality">
-        <factorAwful>0.5</factorAwful>
-        <factorPoor>0.75</factorPoor>
-        <factorNormal>1</factorNormal>
-        <factorGood>1.2</factorGood>
-        <factorExcellent>1.5</factorExcellent>
-        <factorMasterwork>2</factorMasterwork>
-        <factorLegendary>3</factorLegendary>
-      </li>
-    </parts>
   </StatDef>
 
 </Defs>
