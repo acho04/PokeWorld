@@ -9,5 +9,6 @@
     <exclude>Release</exclude>
     <exclude>PokeWorld.zip</exclude>
     <exclude>Compat\BS_Sapient_Animals\1.6\Source</exclude>
+    <exclude>.assetbundler.toml</exclude>
   </Excluded>
 </Configuration>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Alpha Implants</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Body"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>PW_LevitatingOrMovingBody</li>
+                        <li>PW_LevitatingOrMovingHead</li>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Tentacle"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>PW_Tentacle</li>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Wing"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>PW_InsectWing</li>
+                        <li>PW_Wing</li>
+					</value>
+				</li>
+                            <li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_AllLimbs"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>PW_Fin</li>
+                        <li>PW_Pincer</li>
+                        <li>PW_Tentacle</li>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Body"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>PW_LevitatingOrMovingBody</li>
+                        <li>PW_LevitatingOrMovingHead</li>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Tentacle"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>PW_Tentacle</li>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Wing"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>PW_InsectWing</li>
+                        <li>PW_Wing</li>
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

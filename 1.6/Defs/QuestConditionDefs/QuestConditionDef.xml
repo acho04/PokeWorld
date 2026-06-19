@@ -1467,4 +1467,62 @@
     </requiredKindCaught>
     <requiredCaughtMinCount>1</requiredCaughtMinCount>
   </PokeWorld.QuestConditionDef>
+
+  <PokeWorld.QuestConditionDef>
+    <defName>QuestCondition_Glastrier</defName>
+    <questScriptDef>PW_Script_Glastrier</questScriptDef>
+    <generationsRequirements>
+      <li>
+        <generation>8</generation>
+        <minNoLegCaught>56</minNoLegCaught>
+      </li>
+    </generationsRequirements>
+    <requiredKindSeen>
+      <li>PW_Calyrex</li>
+    </requiredKindSeen>
+    <requiredKindCaught>
+      <li>PW_MrRime</li>
+      <li>PW_Frosmoth</li>
+      <li>PW_Eiscue</li>
+      <li>PW_Arctozolt</li>
+      <li>PW_Arctovish</li>
+    </requiredKindCaught>
+    <requiredCaughtMinCount>3</requiredCaughtMinCount>
+  </PokeWorld.QuestConditionDef>
+
+  <PokeWorld.QuestConditionDef>
+    <defName>QuestCondition_Spectrier</defName>
+    <questScriptDef>PW_Script_Spectrier</questScriptDef>
+    <generationsRequirements>
+      <li>
+        <generation>8</generation>
+        <minNoLegCaught>56</minNoLegCaught>
+      </li>
+    </generationsRequirements>
+    <requiredKindSeen>
+      <li>PW_Calyrex</li>
+    </requiredKindSeen>
+    <requiredKindCaught>
+      <li>PW_Polteageist</li>
+      <li>PW_Cursola</li>
+      <li>PW_Runerigus</li>
+      <li>PW_Dragapult</li>
+    </requiredKindCaught>
+    <requiredCaughtMinCount>3</requiredCaughtMinCount>
+  </PokeWorld.QuestConditionDef>
+
+  <PokeWorld.QuestConditionDef>
+    <defName>QuestCondition_Calyrex</defName>
+    <questScriptDef>PW_Script_Calyrex</questScriptDef>
+    <generationsRequirements>
+      <li>
+        <generation>8</generation>
+        <minNoLegCaught>50</minNoLegCaught>
+      </li>
+    </generationsRequirements>
+    <requiredKindSeen>
+      <li>PW_Zacian</li>
+      <li>PW_Zamazenta</li>
+    </requiredKindSeen>
+  </PokeWorld.QuestConditionDef>
 </Defs>

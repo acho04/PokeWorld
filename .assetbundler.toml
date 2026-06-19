@@ -1,0 +1,12 @@
+[global]
+unity_version = "2022.3.35f1"
+link_method = "junction"  # or "copy", "symlink", "hardlink"
+
+# Note, if you are creating multiple assetbundles for a single mod, they need to have unique bundle_name's
+[bundles.textures]
+asset_directory = "./Assets/"
+output_directory = "./1.6/AssetBundles/"
+bundle_name = "themoonitself.pokeworld_textures"
+bundle_path = "themoonitself.pokeworld"
+filename = "resource_[bundle_name]_textures_[target]"
+include_patterns = ["*.png", "*.psd", "*.jpg", "*.jpeg"]

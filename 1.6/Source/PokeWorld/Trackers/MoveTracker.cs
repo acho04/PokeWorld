@@ -46,6 +46,7 @@ public class MoveTracker : IExposable
         {
             learnableMoves.Add(DefDatabase<MoveDef>.GetNamed("Struggle"), MoveLearnMethod.AlwaysKnown);
             tutoredMoves.Add(DefDatabase<MoveDef>.GetNamed("Struggle"));
+            wantedMoves.Add(DefDatabase<MoveDef>.GetNamed("Struggle"), true);
         }
 
         OrderMoves();
@@ -143,11 +144,10 @@ public class MoveTracker : IExposable
                 if (unlockableMoves.Keys.Contains(kvp.Key))
                 {
                     unlockableMoves.Remove(kvp.Key);
-                    wantedMoves.Remove(kvp.Key);
                 }
 
                 unlockableMoves.Add(kvp.Key, kvp.Value);
-                wantedMoves.Add(kvp.Key, preEvoComp.moveTracker.wantedMoves[kvp.Key]);
+                wantedMoves[kvp.Key] = preEvoComp.moveTracker.wantedMoves[kvp.Key];
             }
         }
         foreach (var move in preEvoComp.moveTracker.tutoredMoves)

@@ -33,6 +33,11 @@ namespace PokeWorld
             new_graphic = null;
         }
 
+        public override bool CanStackWith(Thing other)
+        {
+            return false;
+        }
+
         private Graphic GenerateGraphicFromMove()
         {
             var graphicData = new GraphicData();

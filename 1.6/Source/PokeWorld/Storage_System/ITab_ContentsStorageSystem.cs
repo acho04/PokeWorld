@@ -107,13 +107,13 @@ internal class ITab_ContentsStorageSystem : ITab
         Text.WordWrap = false;
         Text.Font = GameFont.Small;
         Widgets.Label(rect1, "PW_StorageSystemOrderByNumber".Translate());
-        Widgets.Checkbox(rect1.xMax, rect1.y, ref flagSortDex, 25, true);
+        Widgets.Checkbox(rect1.xMax, rect1.y, ref flagSortDex, 25, false);
         var rect2 = new Rect(x, y += 28, 180, 28);
         Widgets.Label(rect2, "PW_StorageSystemOrderByName".Translate());
-        Widgets.Checkbox(rect2.xMax, rect2.y, ref flagSortName, 25, true);
+        Widgets.Checkbox(rect2.xMax, rect2.y, ref flagSortName, 25, false);
         var rect3 = new Rect(x, y += 28, 180, 28);
         Widgets.Label(rect3, "PW_StorageSystemOrderByLevel".Translate());
-        Widgets.Checkbox(rect3.xMax, rect3.y, ref flagSortLevel, 25, true);
+        Widgets.Checkbox(rect3.xMax, rect3.y, ref flagSortLevel, 25, false);
         Text.WordWrap = true;
         if (flag1 != flagSortDex && flagSortDex)
         {

@@ -259,7 +259,7 @@ public static class PokemonAttackGizmoUtility
             foreach (var move in pokemon.TryGetComp<CompPokemon>().moveTracker.knownMoves)
             {
                 if (move == DefDatabase<MoveDef>.GetNamed("Struggle")) continue;
-                if (move.tool != null && pokemon.TryGetComp<CompPokemon>().moveTracker.HasUnlocked(move) &&
+                if (move.category == MoveCategory.Physical && move.tool != null && pokemon.TryGetComp<CompPokemon>().moveTracker.HasUnlocked(move) &&
                     pokemon.TryGetComp<CompPokemon>().moveTracker.GetWanted(move)) return false;
             }
 

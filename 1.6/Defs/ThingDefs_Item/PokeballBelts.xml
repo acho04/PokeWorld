@@ -158,6 +158,7 @@
           <scale>(0.2,0.2)</scale>
         </fat>
       </wornGraphicData>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <tags Inherit="false">
         <li>PW_BallBelt</li>
       </tags>
