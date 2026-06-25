@@ -299,6 +299,11 @@ public class LevelTracker : IExposable
             {
                 Copy_Sapient_Attributes(preEvoPokemon, postEvoPokemon);
             }
+            var compPokemon = postEvoPokemon.TryGetComp<CompPokemon>();
+            foreach (var move in Globals.unlockedMoves)
+            {
+                compPokemon.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
+            }
         }
 
         preEvoPokemon.inventory?.DropAllNearPawn(preEvoPokemon.Position);
@@ -316,6 +321,7 @@ public class LevelTracker : IExposable
         for (var i = 0; i < 10; i++) FleckMaker.ThrowDustPuff(preEvoPokemon.Position, preEvoPokemon.Map, 2f);
         preEvoPokemon.relations.ClearAllRelations();
         preEvoPokemon.Destroy();
+        
     }
 
     private void Copy(Pawn pokemon, Pawn evolution)

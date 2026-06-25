@@ -20,6 +20,11 @@ public static class PokemonGeneratorUtility
             else
                 Pokemon.ageTracker.AgeChronologicalTicks = 0;
             Pokemon.health.Reset();
+            var compPokemon = Pokemon.TryGetComp<CompPokemon>();
+            foreach (var move in Globals.unlockedMoves)
+            {
+                compPokemon.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
+            }
         }
 
         GenSpawn.Spawn(Pokemon, position, map);
