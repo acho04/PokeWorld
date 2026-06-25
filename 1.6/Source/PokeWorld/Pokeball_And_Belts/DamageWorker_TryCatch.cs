@@ -49,6 +49,11 @@ internal class DamageWorker_TryCatch : DamageWorker
                                 pawn.training.SetWantedRecursive(DefDatabase<TrainableDef>.GetNamed("Obedience"), true);
                             }
                             pawn.ClearMind();
+                            foreach (var move in Globals.unlockedMoves)
+                            {
+                                compPokemon.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
+                            }
+
                             compPokemon.ballDef = compPokeballBelt.ballDef;
                             Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawn.kindDef);
                             PutInBallUtility.PutPokemonInBall(pawn);

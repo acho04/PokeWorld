@@ -35,6 +35,7 @@
       <li Class="PokeWorld.CompProperties_TargetEffect_UseItemOnPawn">
         <useJob>PW_UseTMOnPokemon</useJob>
       </li>
+      <li Class="CompProperties_UseEffectDestroySelf"/>
     </comps>
     <TM_Moves>
       <li>Acrobatics</li>

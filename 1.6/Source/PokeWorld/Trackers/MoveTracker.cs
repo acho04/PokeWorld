@@ -1,10 +1,17 @@
 ﻿using HarmonyLib;
 using System.Collections.Generic;
 using System.Linq;
+using System.Transactions;
 using Verse;
 
 namespace PokeWorld;
 
+public static class Globals
+{
+    public static List<MoveDef> unlockedMoves = new List<MoveDef>();
+}
+
+//moves unlocked globally upon the usage of a tm (no need to check every mon for their learnset)
 public class MoveTracker : IExposable
 {
     public CompPokemon comp;
@@ -108,10 +115,33 @@ public class MoveTracker : IExposable
 
     public void TeachMove(MoveDef moveDef, MoveLearnMethod byMethod)
     {
+        Log.Error("it got to here!!! -3");
         if (!CanBeTaughtMove(moveDef, byMethod)) return;
         if (unlockableMoves.ContainsKey(moveDef))
             unlockableMoves.Remove(moveDef);
-        tutoredMoves.Add(moveDef);
+
+        if ((byMethod & MoveLearnMethod.Tutor) == MoveLearnMethod.Tutor && !tutoredMoves.Contains(moveDef))
+        {
+            if (!Globals.unlockedMoves.Contains(moveDef))
+            {
+                Globals.unlockedMoves.Add(moveDef);                
+            }
+            foreach (Map existingMap in Current.Game.Maps.ToList())
+            {
+                foreach(Pawn pawn in existingMap.mapPawns.ColonyAnimals.ToList())
+                {
+                    var x = pawn.TryGetComp<CompPokemon>();
+                    if (x != null && x.moveTracker.unlockableMoves.ContainsKey(moveDef))
+                    {
+                        x.moveTracker.TeachMove(moveDef,MoveLearnMethod.Tutor);                    
+                    }
+                }
+            }
+        }
+        if (!tutoredMoves.Contains(moveDef))
+        {
+            tutoredMoves.Add(moveDef);        
+        }
     }
 
     public bool HasUnlocked(MoveDef moveDef)
