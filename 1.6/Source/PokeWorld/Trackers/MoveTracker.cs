@@ -115,7 +115,6 @@ public class MoveTracker : IExposable
 
     public void TeachMove(MoveDef moveDef, MoveLearnMethod byMethod)
     {
-        Log.Error("it got to here!!! -3");
         if (!CanBeTaughtMove(moveDef, byMethod)) return;
         if (unlockableMoves.ContainsKey(moveDef))
             unlockableMoves.Remove(moveDef);
