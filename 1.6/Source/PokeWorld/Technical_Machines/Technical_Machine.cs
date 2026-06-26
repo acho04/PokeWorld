@@ -22,8 +22,19 @@ namespace PokeWorld
         public override void PostMake()
         {
             base.PostMake();
-            if (move == null)
-                SetMove(Def.TM_Moves.RandomElement());
+            if (Globals.unlockedMoves.Count() == Def.TM_Moves.Count())
+            {
+                this.Destroy();
+            }
+            else
+            {
+               while (move == null)
+                {
+                    MoveDef x = Def.TM_Moves.RandomElement();
+                    if (!Globals.unlockedMoves.Contains(x)) SetMove(x);
+                } 
+            }
+            
         }
 
 

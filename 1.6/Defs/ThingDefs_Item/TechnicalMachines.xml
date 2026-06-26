@@ -26,15 +26,12 @@
     </thingSetMakerTags>
     <comps>
       <li Class="CompProperties_Usable">
-        <useJob>UseItem</useJob>
+        <useJob>PW_UseTM</useJob>
         <useLabel>Use {0_label}</useLabel>
-        <useDuration>0</useDuration>
+        <useDuration>120</useDuration>
         <showUseGizmo>true</showUseGizmo>
       </li>
-      <li Class="PokeWorld.CompProperties_Targetable_PW_TutorMove"/>
-      <li Class="PokeWorld.CompProperties_TargetEffect_UseItemOnPawn">
-        <useJob>PW_UseTMOnPokemon</useJob>
-      </li>
+      <li Class="CompProperties_UseEffectDestroySelf"/>
     </comps>
     <TM_Moves>
       <li>Acrobatics</li>

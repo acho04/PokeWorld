@@ -30,6 +30,10 @@ internal class IncidentWorker_BabyPokemonWanderIn : IncidentWorker
         comp.levelTracker.UpdateExpToNextLvl();
         GenSpawn.Spawn(pawn, loc, map, Rot4.Random);
         pawn.SetFaction(Faction.OfPlayer);
+        foreach (var move in Globals.unlockedMoves)
+        {
+            comp.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
+        }
         Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawn.kindDef);
         SendStandardLetter(
             "PW_IncidentBabyPokemon".Translate(), "PW_IncidentBabyPokemonDesc".Translate(pawn.kindDef.label),

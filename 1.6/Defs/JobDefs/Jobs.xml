@@ -73,9 +73,9 @@
   </JobDef>
 
   <JobDef>
-    <defName>PW_UseTMOnPokemon</defName>
-    <driverClass>PokeWorld.JobDriver_UseTMOnPokemon</driverClass>
-    <reportString>teaching TargetA to TargetB</reportString>
+    <defName>PW_UseTM</defName>
+    <driverClass>PokeWorld.JobDriver_UseTM</driverClass>
+    <reportString>teaching TargetA to all colonist Pokémon.</reportString>
   </JobDef>
 
 </Defs>

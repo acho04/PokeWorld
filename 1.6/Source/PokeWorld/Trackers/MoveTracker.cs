@@ -115,16 +115,16 @@ public class MoveTracker : IExposable
 
     public void TeachMove(MoveDef moveDef, MoveLearnMethod byMethod)
     {
+        if (!Globals.unlockedMoves.Contains(moveDef))
+            {
+                Globals.unlockedMoves.Add(moveDef);                
+            }
         if (!CanBeTaughtMove(moveDef, byMethod)) return;
         if (unlockableMoves.ContainsKey(moveDef))
             unlockableMoves.Remove(moveDef);
 
         if ((byMethod & MoveLearnMethod.Tutor) == MoveLearnMethod.Tutor && !tutoredMoves.Contains(moveDef))
         {
-            if (!Globals.unlockedMoves.Contains(moveDef))
-            {
-                Globals.unlockedMoves.Add(moveDef);                
-            }
             foreach (Map existingMap in Current.Game.Maps.ToList())
             {
                 foreach(Pawn pawn in existingMap.mapPawns.ColonyAnimals.ToList())
