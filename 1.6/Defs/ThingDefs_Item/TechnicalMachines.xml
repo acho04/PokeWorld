@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef Class="PokeWorld.TMDef" ParentName="ResourceBase">
     <defName>PW_TechnicalMachine</defName>
-    <description>A small disk shaped machine capable of teaching a pokémon a specific move, provided they are capable of being taught said move.</description>
+    <description>A small disk shaped machine capable of teaching pokémon a specific move, provided they are capable of being taught said move. New TMs will always be ones that haven't been applied to the colony before, unless every TM has been applied.</description>
     <label>TM</label>
     <graphicData>
       <texPath>Things/Item/TMs/TM_Typeless</texPath>

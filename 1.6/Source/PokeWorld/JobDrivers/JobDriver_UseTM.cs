@@ -25,7 +25,7 @@ namespace PokeWorld
         {
             //Log.Error("Error1");
             this.FailOnIncapable(PawnCapacityDefOf.Manipulation);
-            this.FailOn(() => !base.TargetThingA.TryGetComp<CompUsable>().CanBeUsedBy(pawn));
+            this.FailOn(() => !base.TargetThingA.TryGetComp<CompUsable>().CanBeUsedBy(pawn));            
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.A);
             yield return Toils_General.Do(Teach);
         }
@@ -50,6 +50,10 @@ namespace PokeWorld
                         }
                     }
                 }
+                Find.LetterStack.ReceiveLetter(
+                    "PW_AppliedTM".Translate(), "PW_AppliedTMDesc".Translate(TM.move),
+                    LetterDefOf.PositiveEvent
+                );    
                 TM.Destroy();                
             }
         }

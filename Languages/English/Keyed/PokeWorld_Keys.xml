@@ -201,7 +201,7 @@
   <PW_StatEvolutionNeedLevelUpDay>{0} needs to level up during the day to evolve into: {1}</PW_StatEvolutionNeedLevelUpDay>
   <PW_StatEvolutionNeedLevelUpNight>{0} needs to level up during the night to evolve into: {1}</PW_StatEvolutionNeedLevelUpNight>
 
-  
+  <PW_AppliedTM>TM Applied</PW_AppliedTM>
+  <PW_AppliedTMDesc>{0} TM has been applied to all current and future colony Pokémon.</PW_AppliedTMDesc>
 
-  
 </LanguageData>

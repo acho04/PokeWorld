@@ -24,11 +24,11 @@ namespace PokeWorld
             base.PostMake();
             if (Globals.unlockedMoves.Count() == Def.TM_Moves.Count())
             {
-                this.Destroy();
+                SetMove(Def.TM_Moves.RandomElement());
             }
             else
             {
-               while (move == null)
+                while (move == null)
                 {
                     MoveDef x = Def.TM_Moves.RandomElement();
                     if (!Globals.unlockedMoves.Contains(x)) SetMove(x);
