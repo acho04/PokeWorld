@@ -49,7 +49,7 @@ internal class DamageWorker_TryCatch : DamageWorker
                                 pawn.training.SetWantedRecursive(DefDatabase<TrainableDef>.GetNamed("Obedience"), true);
                             }
                             pawn.ClearMind();
-                            foreach (var move in Globals.unlockedMoves)
+                            foreach (var move in unlockedMoveTracker.unlockedMoves)
                             {
                                 compPokemon.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
                             }

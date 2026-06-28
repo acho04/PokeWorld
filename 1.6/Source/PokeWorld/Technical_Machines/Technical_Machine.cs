@@ -22,7 +22,7 @@ namespace PokeWorld
         public override void PostMake()
         {
             base.PostMake();
-            if (Globals.unlockedMoves.Count() == Def.TM_Moves.Count())
+            if (unlockedMoveTracker.unlockedMoves.Count() == Def.TM_Moves.Count())
             {
                 SetMove(Def.TM_Moves.RandomElement());
             }
@@ -31,7 +31,7 @@ namespace PokeWorld
                 while (move == null)
                 {
                     MoveDef x = Def.TM_Moves.RandomElement();
-                    if (!Globals.unlockedMoves.Contains(x)) SetMove(x);
+                    if (!unlockedMoveTracker.unlockedMoves.Contains(x)) SetMove(x);
                 } 
             }
             

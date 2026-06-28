@@ -6,10 +6,7 @@ using Verse;
 
 namespace PokeWorld;
 
-public static class Globals
-{
-    public static List<MoveDef> unlockedMoves = new List<MoveDef>();
-}
+
 
 //moves unlocked globally upon the usage of a tm (no need to check every mon for their learnset)
 public class MoveTracker : IExposable
@@ -115,9 +112,9 @@ public class MoveTracker : IExposable
 
     public void TeachMove(MoveDef moveDef, MoveLearnMethod byMethod)
     {
-        if (!Globals.unlockedMoves.Contains(moveDef))
+        if (!unlockedMoveTracker.unlockedMoves.Contains(moveDef))
             {
-                Globals.unlockedMoves.Add(moveDef);                
+                unlockedMoveTracker.unlockedMoves.Add(moveDef);                
             }
         if (!CanBeTaughtMove(moveDef, byMethod)) return;
         if (unlockableMoves.ContainsKey(moveDef))

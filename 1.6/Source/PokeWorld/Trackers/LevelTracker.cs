@@ -300,7 +300,7 @@ public class LevelTracker : IExposable
                 Copy_Sapient_Attributes(preEvoPokemon, postEvoPokemon);
             }
             var compPokemon = postEvoPokemon.TryGetComp<CompPokemon>();
-            foreach (var move in Globals.unlockedMoves)
+            foreach (var move in unlockedMoveTracker.unlockedMoves)
             {
                 compPokemon.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
             }

@@ -30,7 +30,7 @@ internal class IncidentWorker_BabyPokemonWanderIn : IncidentWorker
         comp.levelTracker.UpdateExpToNextLvl();
         GenSpawn.Spawn(pawn, loc, map, Rot4.Random);
         pawn.SetFaction(Faction.OfPlayer);
-        foreach (var move in Globals.unlockedMoves)
+        foreach (var move in unlockedMoveTracker.unlockedMoves)
         {
             comp.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
         }

@@ -21,7 +21,7 @@ public static class PokemonGeneratorUtility
                 Pokemon.ageTracker.AgeChronologicalTicks = 0;
             Pokemon.health.Reset();
             var compPokemon = Pokemon.TryGetComp<CompPokemon>();
-            foreach (var move in Globals.unlockedMoves)
+            foreach (var move in unlockedMoveTracker.unlockedMoves)
             {
                 compPokemon.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
             }

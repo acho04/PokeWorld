@@ -363,6 +363,11 @@ public class CompPokemon : ThingComp
         if (action == TradeAction.PlayerBuys)
         {
             Pokemon.SetFaction(Faction.OfPlayer, playerNegotiator);
+            var comp = Pokemon.TryGetComp<CompPokemon>();
+            foreach (var move in unlockedMoveTracker.unlockedMoves)
+            {
+                comp.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
+            }
             Pokemon.training.Train(DefDatabase<TrainableDef>.GetNamed("Obedience"), playerNegotiator, true);
             Pokemon.training.SetWantedRecursive(DefDatabase<TrainableDef>.GetNamed("Obedience"), true);
             Find.World.GetComponent<PokedexManager>().AddPokemonKindCaught(pawnKindDef);

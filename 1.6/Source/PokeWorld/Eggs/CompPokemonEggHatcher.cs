@@ -62,6 +62,10 @@ public class CompPokemonEggHatcher : CompHatcher
                     comp.levelTracker.level = 1;
                     comp.levelTracker.UpdateExpToNextLvl();
                     comp.statTracker.UpdateStats();
+                    foreach (var move in unlockedMoveTracker.unlockedMoves)
+                    {
+                        comp.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
+                    }
                 }
 
                 if (PawnUtility.TrySpawnHatchedOrBornPawn(pawn, parent))
