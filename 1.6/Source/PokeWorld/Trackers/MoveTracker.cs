@@ -129,11 +129,26 @@ public class MoveTracker : IExposable
                     var x = pawn.TryGetComp<CompPokemon>();
                     if (x != null && x.moveTracker.unlockableMoves.ContainsKey(moveDef))
                     {
-                        x.moveTracker.TeachMove(moveDef,MoveLearnMethod.Tutor);                    
+                        x.moveTracker.TeachMoveRec(moveDef,MoveLearnMethod.Tutor);                    
                     }
                 }
             }
         }
+        if (!tutoredMoves.Contains(moveDef))
+        {
+            tutoredMoves.Add(moveDef);        
+        }
+    }
+
+    public void TeachMoveRec(MoveDef moveDef, MoveLearnMethod byMethod)
+    {
+        if (!unlockedMoveTracker.unlockedMoves.Contains(moveDef))
+            {
+                unlockedMoveTracker.unlockedMoves.Add(moveDef);                
+            }
+        if (!CanBeTaughtMove(moveDef, byMethod)) return;
+        if (unlockableMoves.ContainsKey(moveDef))
+            unlockableMoves.Remove(moveDef);
         if (!tutoredMoves.Contains(moveDef))
         {
             tutoredMoves.Add(moveDef);        

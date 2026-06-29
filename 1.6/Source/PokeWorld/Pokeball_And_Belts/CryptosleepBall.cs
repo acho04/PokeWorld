@@ -43,7 +43,15 @@ public class CryptosleepBall : ThingWithComps, ISuspendableThingHolder, IOpenabl
 
     public virtual void Open()
     {
-        if (HasAnyContents) EjectContents();
+        if (HasAnyContents)
+        {
+            var x = innerContainer[0].TryGetComp<CompPokemon>();
+            foreach (var move in unlockedMoveTracker.unlockedMoves)
+            {
+                x.moveTracker.TeachMove(move,MoveLearnMethod.Tutor);
+            }
+            EjectContents();        
+        }
     }
 
     public bool IsContentsSuspended => true;
