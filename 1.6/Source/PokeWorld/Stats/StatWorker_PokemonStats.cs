@@ -61,12 +61,12 @@ internal class StatWorker_PokemonStats : StatWorker
                 var level = comp.levelTracker.level;
                 if (stat.defName == "PW_HP")
                 {
-                    val = (int)((2 * val + IV + EV / 4) * level / 100) + level + 10;
+                    val = (int)((2 * val + IV + EV / 4) * level / 200) + level + 20;
                 }
                 else
                 {
                     var natureMultiplier = GetNatureMultiplier(comp, stat);
-                    val = (int)(((2 * val + IV + EV / 4) * level / 100 + 5) * natureMultiplier);
+                    val = (int)(((2 * val + IV + EV / 4) * level / 200 + 10) * natureMultiplier);
                 }
             }
         }
